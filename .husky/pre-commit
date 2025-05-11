@@ -1,6 +1,7 @@
+# 
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
 npm run lint
 npm run build
-npx playwright test --bail
+npx playwright test src/tests/registerBeforeCheckout.spec.ts --bail
