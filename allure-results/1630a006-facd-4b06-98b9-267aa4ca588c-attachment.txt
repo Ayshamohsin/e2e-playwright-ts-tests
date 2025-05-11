@@ -1,0 +1,20 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Diana Botsford',
+  'Nikolaus, Nicolas and Ullrich',
+  '750 Cherry Tree Close',
+  'Suite 271',
+  'West Alanis New York 75161',
+  'New Zealand',
+  '387-643-9553 x5257'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+}
+Captured Permanent Success Message: Congratulations! Your order has been confirmed!
+Captured Permanent Success Message: Your account has been permanently deleted!
+ yahoo ran all

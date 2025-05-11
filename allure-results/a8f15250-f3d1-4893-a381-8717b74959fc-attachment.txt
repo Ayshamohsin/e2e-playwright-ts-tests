@@ -1,0 +1,20 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Cayla Altenwerth',
+  "O'Conner - Lesch",
+  '49467 Fadel Creek',
+  'Apt. 558',
+  'Port Britney Georgia 08014',
+  'New Zealand',
+  '351-452-1067 x57438'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+}
+Captured Permanent Success Message: Congratulations! Your order has been confirmed!
+Captured Accout Deletion Success Message: Your account has been permanently deleted!
+✅ Yahoo! Ran all successfully

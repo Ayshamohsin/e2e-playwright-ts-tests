@@ -1,0 +1,852 @@
+{
+  "uuid": "e5345049-df9e-4c05-b21b-346b3377fc4e",
+  "name": "Place Order : Register While Checkout",
+  "historyId": "fb428f988d7b9cd001cda5812212ff5e:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n  Array [\n    \"Mrs. Bryana Johnson\",\n    \"Schaefer, Crona and Johns\",\n    \"887 Randall Centers\",\n-   \"Fort Heath Maryland 88311\",\n+   \"Apt. 470\",\n+   \"Fort Heath Maryland\n+ \t\t\t\t\t\t\t\t88311\",\n    \"New Zealand\",\n    \"934-837-3866 x247\",\n  ]",
+    "trace": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n  Array [\n    \"Mrs. Bryana Johnson\",\n    \"Schaefer, Crona and Johns\",\n    \"887 Randall Centers\",\n-   \"Fort Heath Maryland 88311\",\n+   \"Apt. 470\",\n+   \"Fort Heath Maryland\n+ \t\t\t\t\t\t\t\t88311\",\n    \"New Zealand\",\n    \"934-837-3866 x247\",\n  ]\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:74:43"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserType.launch",
+              "start": 1746847847243,
+              "stop": 1746847848637
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: browser",
+          "start": 1746847847234,
+          "stop": 1746847848638
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1746847848648,
+              "stop": 1746847848688
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746847848641,
+          "stop": 1746847848694
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1746847848701,
+              "stop": 1746847849727
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746847848696,
+          "stop": 1746847849728
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1746847847218,
+      "stop": 1746847849728
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847849744,
+      "name": "page.goto(https://automationexercise.com/)",
+      "stop": 1746847854471
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847854477,
+      "name": "locator.isVisible(.logo.pull-left)",
+      "stop": 1746847854748
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847854756,
+      "name": "expect.toBeTruthy",
+      "stop": 1746847854757
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847854761,
+      "name": "locator.isVisible(.nav.navbar-nav)",
+      "stop": 1746847854768
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847854770,
+      "name": "expect.toBeTruthy",
+      "stop": 1746847854765
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847854772,
+      "name": "locator.isVisible(#footer >> nth=0)",
+      "stop": 1746847854780
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847854783,
+      "name": "expect.toBeTruthy",
+      "stop": 1746847854779
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847854786,
+      "name": "locator.count(.product-image-wrapper)",
+      "stop": 1746847854793
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847854798,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=0)",
+      "stop": 1746847854893
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847854896,
+      "name": "locator.textContent(.product-image-wrapper >> nth=0 >> div.productinfo p)",
+      "stop": 1746847854938
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847854946,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=1)",
+      "stop": 1746847855045
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847855047,
+      "name": "locator.textContent(.product-image-wrapper >> nth=1 >> div.productinfo p)",
+      "stop": 1746847855060
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847855063,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=2)",
+      "stop": 1746847855126
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847855128,
+      "name": "locator.textContent(.product-image-wrapper >> nth=2 >> div.productinfo p)",
+      "stop": 1746847855143
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847855147,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=3)",
+      "stop": 1746847855508
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847855511,
+      "name": "locator.textContent(.product-image-wrapper >> nth=3 >> div.productinfo p)",
+      "stop": 1746847855522
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847855525,
+      "name": "locator.click(.product-image-wrapper >> nth=3 >> text=Add to cart >> nth=0)",
+      "stop": 1746847855714
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847855723,
+      "name": "locator.click(.btn.btn-success.close-modal.btn-block)",
+      "stop": 1746847856523
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847856525,
+      "name": "locator.click(a[href=\"/view_cart\"] >> nth=0)",
+      "stop": 1746847857123
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847857129,
+      "name": "expect.toBeVisible",
+      "stop": 1746847857298
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847857304,
+      "name": "locator.click(.btn.btn-default.check_out)",
+      "stop": 1746847857356
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847857360,
+      "name": "locator.click(a[href=\"/login\"] >> nth=1)",
+      "stop": 1746847857750
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847857775,
+      "name": "locator.fill(Genevieve Yost)",
+      "stop": 1746847857894
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847857896,
+      "name": "locator.fill(Margie73@gmail.com)",
+      "stop": 1746847857969
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847857973,
+      "name": "locator.fill(Margie73@gmail.com)",
+      "stop": 1746847858036
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847858040,
+      "name": "locator.getByRole('button', { name: 'Signup' }).click",
+      "stop": 1746847858560
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847858564,
+      "name": "locator.check(//input[@id='id_gender2'])",
+      "stop": 1746847858822
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847858825,
+      "name": "locator.fill(xetbj9rS2qIc7Cx)",
+      "stop": 1746847858844
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847858852,
+      "name": "locator.selectOption(#days)",
+      "stop": 1746847858919
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847858923,
+      "name": "locator.selectOption(#months)",
+      "stop": 1746847858949
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847858953,
+      "name": "locator.selectOption(#years)",
+      "stop": 1746847858973
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847858976,
+      "name": "locator.check(#newsletter)",
+      "stop": 1746847859102
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847859105,
+      "name": "locator.check(#optin)",
+      "stop": 1746847859171
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847859173,
+      "name": "locator.fill(Bryana)",
+      "stop": 1746847859197
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847859201,
+      "name": "locator.fill(Johnson)",
+      "stop": 1746847859228
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847859235,
+      "name": "locator.fill(Schaefer, Crona and Johns)",
+      "stop": 1746847859264
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847859270,
+      "name": "locator.fill(887 Randall Centers)",
+      "stop": 1746847859361
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847859367,
+      "name": "locator.fill(Apt. 470)",
+      "stop": 1746847859394
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847859397,
+      "name": "locator.click(#country)",
+      "stop": 1746847859525
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847859530,
+      "name": "locator.selectOption(#country)",
+      "stop": 1746847859684
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847859687,
+      "name": "locator.fill(Maryland)",
+      "stop": 1746847859741
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847859745,
+      "name": "locator.fill(Fort Heath)",
+      "stop": 1746847859841
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847859844,
+      "name": "locator.fill(88311)",
+      "stop": 1746847859879
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847859885,
+      "name": "locator.fill(934-837-3866 x247)",
+      "stop": 1746847859923
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847859929,
+      "name": "locator.click(.btn.btn-default >> nth=0)",
+      "stop": 1746847861000
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847861011,
+      "name": "page.waitForLoadState",
+      "stop": 1746847865847
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847865850,
+      "name": "expect.toHaveText",
+      "stop": 1746847865889
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847865891,
+      "name": "locator.click(.btn.btn-primary)",
+      "stop": 1746847867024
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847867028,
+      "name": "page.waitForLoadState",
+      "stop": 1746847867194
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847867207,
+      "name": "page.pause",
+      "stop": 1746847875937
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847875940,
+      "name": "expect.toBeVisible",
+      "stop": 1746847878743
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847878745,
+      "name": "locator.click(a[href=\"/view_cart\"] >> nth=0)",
+      "stop": 1746847881120
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847881127,
+      "name": "locator.click(.btn.btn-default.check_out)",
+      "stop": 1746847883197
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847883203,
+      "name": "locator.count(#address_delivery li)",
+      "stop": 1746847887182
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847887186,
+      "name": "locator.textContent(#address_delivery li >> nth=1)",
+      "stop": 1746847890052
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847890056,
+      "name": "locator.textContent(#address_delivery li >> nth=2)",
+      "stop": 1746847891946
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847891948,
+      "name": "locator.textContent(#address_delivery li >> nth=3)",
+      "stop": 1746847893332
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847893334,
+      "name": "locator.textContent(#address_delivery li >> nth=4)",
+      "stop": 1746847894614
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847894617,
+      "name": "locator.textContent(#address_delivery li >> nth=5)",
+      "stop": 1746847896251
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847896255,
+      "name": "locator.textContent(#address_delivery li >> nth=6)",
+      "stop": 1746847897335
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847897341,
+      "name": "locator.textContent(#address_delivery li >> nth=7)",
+      "stop": 1746847898590
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n  Array [\n    \"Mrs. Bryana Johnson\",\n    \"Schaefer, Crona and Johns\",\n    \"887 Randall Centers\",\n-   \"Fort Heath Maryland 88311\",\n+   \"Apt. 470\",\n+   \"Fort Heath Maryland\n+ \t\t\t\t\t\t\t\t88311\",\n    \"New Zealand\",\n    \"934-837-3866 x247\",\n  ]",
+        "trace": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n  Array [\n    \"Mrs. Bryana Johnson\",\n    \"Schaefer, Crona and Johns\",\n    \"887 Randall Centers\",\n-   \"Fort Heath Maryland 88311\",\n+   \"Apt. 470\",\n+   \"Fort Heath Maryland\n+ \t\t\t\t\t\t\t\t88311\",\n    \"New Zealand\",\n    \"934-837-3866 x247\",\n  ]\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:74:43"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746847898594,
+      "name": "expect.toEqual",
+      "stop": 1746847898613
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_error-context-0",
+          "source": "58c3f5bd-1b5e-4c81-98b1-b292f554afef-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1746847899713,
+      "name": "_error-context-0",
+      "stop": 1746847899713
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746847898624,
+          "stop": 1746847898624
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746847898626,
+          "stop": 1746847898627
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1746847898619,
+      "stop": 1746847898836
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "576db22f-907b-4885-b110-1d5ac46f14ab-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "registerWhileCheckout.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > registerWhileCheckout.spec.ts" },
+    { "name": "host", "value": "Confiz-6290" },
+    { "name": "thread", "value": "pid-16036-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "registerWhileCheckout.spec.ts" }
+  ],
+  "links": [],
+  "start": 1746847847221,
+  "testCaseId": "fb428f988d7b9cd001cda5812212ff5e",
+  "fullName": "registerWhileCheckout.spec.ts:11:5",
+  "stop": 1746847897392
+}

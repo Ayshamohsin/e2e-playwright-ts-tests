@@ -1,0 +1,12 @@
+my raw text [
+  '',
+  'HOME',
+  ' PRODUCTS',
+  'CART',
+  'SIGNUP / LOGIN',
+  'TEST CASES',
+  'API TESTING',
+  'VIDEO TUTORIALS',
+  'CONTACT US',
+  ''
+]

@@ -1,0 +1,11 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Jasmin Treutel',
+  'Runolfsdottir LLC',
+  '858 Cedar Road',
+  'Suite 542',
+  'Agustinaberg North Carolina 89092-0044',
+  'New Zealand',
+  '823.615.6994 x7223'
+]

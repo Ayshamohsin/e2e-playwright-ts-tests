@@ -1,0 +1,20 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Rogers Kilback',
+  'Bahringer and Sons',
+  '43377 Marks Club',
+  'Apt. 372',
+  'Hoffman Estates Rhode Island 09411',
+  'New Zealand',
+  '(218) 620-3757'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+}
+Captured Permanent Success Message: Congratulations! Your order has been confirmed!
+Captured Accout Deletion Success Message: Your account has been permanently deleted!
+ yahoo ran all

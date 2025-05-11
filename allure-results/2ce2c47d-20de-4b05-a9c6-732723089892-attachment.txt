@@ -1,0 +1,1 @@
+Skipping row 1 because product name not visible.

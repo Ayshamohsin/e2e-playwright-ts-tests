@@ -1,0 +1,25 @@
+Clicked add to cart for: Stylish Dress
+Clicked add to cart for: Winter Top
+Added Items: [
+  { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 },
+  { name: 'Winter Top', price: 'Rs. 600', quantity: 1 }
+]
+Expected Delivery Address: [
+  'Mrs. Pierre Monahan',
+  'Hammes - Hills',
+  '274 Keira Radial',
+  'Suite 185',
+  'Ofeliashire Colorado 49572',
+  'New Zealand',
+  '1-894-672-1994'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+}
+Matched Item: { name: 'Winter Top', price: 'Rs. 600', quantity: 1, total: 'Rs. 600' }
+Captured Permanent Success Message: Congratulations! Your order has been confirmed!
+Captured Accout Deletion Success Message: Your account has been permanently deleted!
+✅ Yahoo! Everything Working Fine, ran all

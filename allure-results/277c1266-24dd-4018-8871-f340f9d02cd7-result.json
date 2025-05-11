@@ -1,0 +1,1165 @@
+{
+  "uuid": "277c1266-24dd-4018-8871-f340f9d02cd7",
+  "name": "Place Order : Register While Checkout",
+  "historyId": "fb428f988d7b9cd001cda5812212ff5e:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "broken",
+  "statusDetails": {
+    "message": "Test timeout of 30000ms exceeded.",
+    "trace": "Test timeout of 30000ms exceeded."
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserType.launch",
+              "start": 1746890841904,
+              "stop": 1746890842105
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: browser",
+          "start": 1746890841902,
+          "stop": 1746890842105
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1746890842110,
+              "stop": 1746890842139
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746890842107,
+          "stop": 1746890842142
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1746890842146,
+              "stop": 1746890842435
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746890842143,
+          "stop": 1746890842435
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1746890841891,
+      "stop": 1746890842436
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890842443,
+      "name": "page.goto(https://automationexercise.com/)",
+      "stop": 1746890847613
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847619,
+      "name": "locator.isVisible(.logo.pull-left)",
+      "stop": 1746890847701
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847703,
+      "name": "expect.toBeTruthy",
+      "stop": 1746890847704
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847704,
+      "name": "locator.isVisible(.nav.navbar-nav)",
+      "stop": 1746890847707
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847708,
+      "name": "expect.toBeTruthy",
+      "stop": 1746890847709
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847709,
+      "name": "locator.isVisible(#footer >> nth=0)",
+      "stop": 1746890847712
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847713,
+      "name": "expect.toBeTruthy",
+      "stop": 1746890847714
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847714,
+      "name": "locator.count(.product-image-wrapper)",
+      "stop": 1746890847716
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847717,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=0)",
+      "stop": 1746890847742
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847744,
+      "name": "locator.textContent(.product-image-wrapper >> nth=0 >> div.productinfo p)",
+      "stop": 1746890847747
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847748,
+      "name": "locator.textContent(.product-image-wrapper >> nth=0 >> div.productinfo h2)",
+      "stop": 1746890847751
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847752,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=1)",
+      "stop": 1746890847793
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847794,
+      "name": "locator.textContent(.product-image-wrapper >> nth=1 >> div.productinfo p)",
+      "stop": 1746890847798
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847798,
+      "name": "locator.textContent(.product-image-wrapper >> nth=1 >> div.productinfo h2)",
+      "stop": 1746890847801
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847802,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=2)",
+      "stop": 1746890847843
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847843,
+      "name": "locator.textContent(.product-image-wrapper >> nth=2 >> div.productinfo p)",
+      "stop": 1746890847846
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847847,
+      "name": "locator.textContent(.product-image-wrapper >> nth=2 >> div.productinfo h2)",
+      "stop": 1746890847851
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847851,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=3)",
+      "stop": 1746890847893
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847894,
+      "name": "locator.textContent(.product-image-wrapper >> nth=3 >> div.productinfo p)",
+      "stop": 1746890847899
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847900,
+      "name": "locator.textContent(.product-image-wrapper >> nth=3 >> div.productinfo h2)",
+      "stop": 1746890847902
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847903,
+      "name": "locator.click(.product-image-wrapper >> nth=3 >> text=Add to cart >> nth=0)",
+      "stop": 1746890847958
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890847960,
+      "name": "locator.click(.btn.btn-success.close-modal.btn-block)",
+      "stop": 1746890848920
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890848921,
+      "name": "locator.click(a[href=\"/view_cart\"] >> nth=0)",
+      "stop": 1746890849300
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890849301,
+      "name": "expect.toBeVisible",
+      "stop": 1746890849344
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890849346,
+      "name": "locator.click(.btn.btn-default.check_out)",
+      "stop": 1746890849393
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890849395,
+      "name": "locator.click(a[href=\"/login\"] >> nth=1)",
+      "stop": 1746890849735
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890849742,
+      "name": "locator.fill(Michelle Johns)",
+      "stop": 1746890849783
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890849785,
+      "name": "locator.fill(Monica.Bogisich20@hotmail.com)",
+      "stop": 1746890849796
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890849798,
+      "name": "locator.fill(Monica.Bogisich20@hotmail.com)",
+      "stop": 1746890849807
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890849809,
+      "name": "locator.getByRole('button', { name: 'Signup' }).click",
+      "stop": 1746890850132
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850133,
+      "name": "locator.check(//input[@id='id_gender2'])",
+      "stop": 1746890850253
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850254,
+      "name": "locator.fill(oWpm4H1_RmXCLxq)",
+      "stop": 1746890850279
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850280,
+      "name": "locator.selectOption(#days)",
+      "stop": 1746890850289
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850291,
+      "name": "locator.selectOption(#months)",
+      "stop": 1746890850299
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850301,
+      "name": "locator.selectOption(#years)",
+      "stop": 1746890850307
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850308,
+      "name": "locator.check(#newsletter)",
+      "stop": 1746890850350
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850351,
+      "name": "locator.check(#optin)",
+      "stop": 1746890850402
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850403,
+      "name": "locator.fill(Adriel)",
+      "stop": 1746890850417
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850418,
+      "name": "locator.fill(Olson)",
+      "stop": 1746890850433
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850434,
+      "name": "locator.fill(Herzog, Kohler and Kemmer)",
+      "stop": 1746890850447
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850449,
+      "name": "locator.fill(9558 Koch Well)",
+      "stop": 1746890850467
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850469,
+      "name": "locator.fill(Apt. 306)",
+      "stop": 1746890850487
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850488,
+      "name": "locator.click(#country)",
+      "stop": 1746890850566
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850568,
+      "name": "locator.selectOption(#country)",
+      "stop": 1746890850577
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850579,
+      "name": "locator.fill(Idaho)",
+      "stop": 1746890850609
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850610,
+      "name": "locator.fill(Reyfield)",
+      "stop": 1746890850622
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850624,
+      "name": "locator.fill(41723-4959)",
+      "stop": 1746890850636
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850637,
+      "name": "locator.fill(1-785-351-0425 x000)",
+      "stop": 1746890850651
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890850653,
+      "name": "locator.click(.btn.btn-default >> nth=0)",
+      "stop": 1746890851512
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890851515,
+      "name": "page.waitForLoadState",
+      "stop": 1746890855373
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890855375,
+      "name": "expect.toHaveText",
+      "stop": 1746890855395
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890855396,
+      "name": "locator.click(.btn.btn-primary)",
+      "stop": 1746890855785
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890855786,
+      "name": "page.waitForLoadState",
+      "stop": 1746890855808
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890855809,
+      "name": "expect.toBeVisible",
+      "stop": 1746890855842
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890855843,
+      "name": "locator.click(a[href=\"/view_cart\"] >> nth=0)",
+      "stop": 1746890857097
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857098,
+      "name": "locator.click(.btn.btn-default.check_out)",
+      "stop": 1746890857469
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857473,
+      "name": "locator.count(#address_delivery li)",
+      "stop": 1746890857503
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857504,
+      "name": "locator.textContent(#address_delivery li >> nth=1)",
+      "stop": 1746890857507
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857508,
+      "name": "locator.textContent(#address_delivery li >> nth=2)",
+      "stop": 1746890857510
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857511,
+      "name": "locator.textContent(#address_delivery li >> nth=3)",
+      "stop": 1746890857513
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857514,
+      "name": "locator.textContent(#address_delivery li >> nth=4)",
+      "stop": 1746890857516
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857516,
+      "name": "locator.textContent(#address_delivery li >> nth=5)",
+      "stop": 1746890857518
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857519,
+      "name": "locator.textContent(#address_delivery li >> nth=6)",
+      "stop": 1746890857521
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857521,
+      "name": "locator.textContent(#address_delivery li >> nth=7)",
+      "stop": 1746890857523
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857524,
+      "name": "expect.toEqual",
+      "stop": 1746890857525
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857526,
+      "name": "locator.count(#address_invoice li)",
+      "stop": 1746890857527
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857528,
+      "name": "locator.textContent(#address_invoice li >> nth=1)",
+      "stop": 1746890857530
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857532,
+      "name": "locator.textContent(#address_invoice li >> nth=2)",
+      "stop": 1746890857534
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857535,
+      "name": "locator.textContent(#address_invoice li >> nth=3)",
+      "stop": 1746890857538
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857539,
+      "name": "locator.textContent(#address_invoice li >> nth=4)",
+      "stop": 1746890857541
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857542,
+      "name": "locator.textContent(#address_invoice li >> nth=5)",
+      "stop": 1746890857544
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857544,
+      "name": "locator.textContent(#address_invoice li >> nth=6)",
+      "stop": 1746890857546
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857547,
+      "name": "locator.textContent(#address_invoice li >> nth=7)",
+      "stop": 1746890857549
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857549,
+      "name": "expect.toEqual",
+      "stop": 1746890857550
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857554,
+      "name": "locator.waitFor(tbody tr >> nth=0)",
+      "stop": 1746890857561
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857562,
+      "name": "locator.count(tbody tr)",
+      "stop": 1746890857563
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890857564,
+      "name": "locator.scrollIntoViewIfNeeded(tbody tr >> nth=0)",
+      "stop": 1746890858292
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890858294,
+      "name": "locator.isVisible(tbody tr >> nth=0)",
+      "stop": 1746890858297
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890858298,
+      "name": "locator.isVisible(tbody tr >> nth=0 >> td.cart_description h4 a)",
+      "stop": 1746890858303
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890858305,
+      "name": "locator.textContent(tbody tr >> nth=0 >> td.cart_description h4 a)",
+      "stop": 1746890858309
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890858310,
+      "name": "locator.textContent(tbody tr >> nth=0 >> td.cart_price p)",
+      "stop": 1746890858312
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890858313,
+      "name": "locator.textContent(tbody tr >> nth=0 >> td.cart_quantity button)",
+      "stop": 1746890858315
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890858317,
+      "name": "locator.textContent(tbody tr >> nth=0 >> td.cart_total p)",
+      "stop": 1746890858320
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890858322,
+      "name": "locator.scrollIntoViewIfNeeded(tbody tr >> nth=1)",
+      "stop": 1746890858356
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890858358,
+      "name": "locator.isVisible(tbody tr >> nth=1)",
+      "stop": 1746890858362
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890858364,
+      "name": "locator.isVisible(tbody tr >> nth=1 >> td.cart_description h4 a)",
+      "stop": 1746890858368
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890858369,
+      "name": "expect.toBeDefined",
+      "stop": 1746890858370
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890858370,
+      "name": "expect.toBe",
+      "stop": 1746890858371
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890858371,
+      "name": "expect.toBe",
+      "stop": 1746890858372
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for locator('form-control')\n",
+        "trace": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for locator('form-control')\n\n    at CheckOut.addDescriptionAndPlaceOrder (C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\pages\\checkOut.ts:107:32)\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:95:34"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746890858373,
+      "name": "locator.fill(I ahave revied my delivery address and order detail.)",
+      "stop": 1746890872161
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_error-context-1",
+          "source": "3e6af52d-2f05-4e97-b47d-5c23aa3e77f4-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1746890872396,
+      "name": "_error-context-1",
+      "stop": 1746890872396
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746890872118,
+          "stop": 1746890872118
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746890872118,
+          "stop": 1746890872118
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1746890872117,
+      "stop": 1746890872220
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "815627d1-64f8-4b68-92e7-415af7c56961-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "stderr",
+      "source": "0e069fcc-6f61-4a34-948e-3918dc6149a9-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "registerWhileCheckout.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > registerWhileCheckout.spec.ts" },
+    { "name": "host", "value": "Confiz-6290" },
+    { "name": "thread", "value": "pid-21452-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "registerWhileCheckout.spec.ts" }
+  ],
+  "links": [],
+  "start": 1746890841893,
+  "testCaseId": "fb428f988d7b9cd001cda5812212ff5e",
+  "fullName": "registerWhileCheckout.spec.ts:11:5",
+  "stop": 1746890871985
+}

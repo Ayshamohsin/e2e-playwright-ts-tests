@@ -1,0 +1,206 @@
+{
+  "uuid": "ec98de66-ca2a-47a3-9e6e-5e2d050f2d57",
+  "name": "Place Order : Register While Checkout",
+  "historyId": "fb428f988d7b9cd001cda5812212ff5e:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: locator.waitFor: Unexpected token \" \" while parsing css selector \"p : has_text(\"Congratulations! Your new account has been successfully created!\")\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for p : has_text(\"Congratulations! Your new account has been successfully created!\") to be visible\n",
+    "trace": "Error: locator.waitFor: Unexpected token \" \" while parsing css selector \"p : has_text(\"Congratulations! Your new account has been successfully created!\")\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for p : has_text(\"Congratulations! Your new account has been successfully created!\") to be visible\n\n    at SignUp (C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\pages\\signUP.ts:53:129)\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:13:28"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserType.launch",
+              "start": 1746810295035,
+              "stop": 1746810295529
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: browser",
+          "start": 1746810295025,
+          "stop": 1746810295529
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1746810295541,
+              "stop": 1746810295587
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746810295533,
+          "stop": 1746810295595
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1746810295602,
+              "stop": 1746810296355
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746810295596,
+          "stop": 1746810296356
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1746810295008,
+      "stop": 1746810296356
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: page.goto: Test ended.\nCall log:\n  - navigating to \"https://automationexercise.com/\", waiting until \"load\"\n",
+        "trace": "Error: page.goto: Test ended.\nCall log:\n  - navigating to \"https://automationexercise.com/\", waiting until \"load\"\n\n    at HomePage.navigate (C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\pages\\homePage.ts:24:21)\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:17:28"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: locator.waitFor: Unexpected token \" \" while parsing css selector \"p : has_text(\"Congratulations! Your new account has been successfully created!\")\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for p : has_text(\"Congratulations! Your new account has been successfully created!\") to be visible\n",
+            "trace": "Error: locator.waitFor: Unexpected token \" \" while parsing css selector \"p : has_text(\"Congratulations! Your new account has been successfully created!\")\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for p : has_text(\"Congratulations! Your new account has been successfully created!\") to be visible\n\n    at SignUp (C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\pages\\signUP.ts:53:129)\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:13:28"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1746810296393,
+          "name": "page.goto(https://automationexercise.com/)",
+          "stop": 1746810296450
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746810296381,
+      "name": "locator.waitFor(p : has_text(\"Congratulations! Your new account has been successfully created!\"))",
+      "stop": 1746810297774
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_error-context-0",
+          "source": "8dd5ef8e-072e-4415-bb35-1bfbf2b82333-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1746810298284,
+      "name": "_error-context-0",
+      "stop": 1746810298284
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_error-context-1",
+          "source": "3a53fde1-d2d4-4e2d-a343-ab932e7b92a7-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1746810298290,
+      "name": "_error-context-1",
+      "stop": 1746810298290
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746810296450,
+          "stop": 1746810296451
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746810296453,
+          "stop": 1746810296453
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1746810296444,
+      "stop": 1746810297894
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "registerWhileCheckout.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > registerWhileCheckout.spec.ts" },
+    { "name": "host", "value": "Confiz-6290" },
+    { "name": "thread", "value": "pid-21552-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "registerWhileCheckout.spec.ts" }
+  ],
+  "links": [],
+  "start": 1746810295013,
+  "testCaseId": "fb428f988d7b9cd001cda5812212ff5e",
+  "fullName": "registerWhileCheckout.spec.ts:10:5",
+  "stop": 1746810297326
+}

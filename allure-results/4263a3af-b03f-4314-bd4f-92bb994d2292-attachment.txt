@@ -1,0 +1,22 @@
+Clicked add to cart for: Stylish Dress
+Clicked add to cart for: Winter Top
+Added Items: [
+  { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 },
+  { name: 'Winter Top', price: 'Rs. 600', quantity: 1 }
+]
+Expected Delivery Address: [
+  'Mrs. Garnet Hamill',
+  'Botsford - Cremin',
+  '554 Weissnat Burg',
+  'Apt. 356',
+  'Sheboygan Georgia 95385-6246',
+  'New Zealand',
+  '958-855-3524 x8503'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+}
+Matched Item: { name: 'Winter Top', price: 'Rs. 600', quantity: 1, total: 'Rs. 600' }

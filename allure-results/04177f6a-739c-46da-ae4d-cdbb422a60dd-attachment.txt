@@ -1,0 +1,18 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Bridget Spinka',
+  'Littel Inc',
+  '79595 Rodriguez Cliff',
+  'Apt. 757',
+  'Port Makayla North Dakota 32455',
+  'New Zealand',
+  '1-943-274-9806 x971'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+} Rs. 1500 1 Stylish Dress
+Captured Payment Success Message: Congratulations! Your order has been confirmed!

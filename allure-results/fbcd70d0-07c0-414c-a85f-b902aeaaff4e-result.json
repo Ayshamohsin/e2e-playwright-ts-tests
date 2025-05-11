@@ -1,0 +1,390 @@
+{
+  "uuid": "fbcd70d0-07c0-414c-a85f-b902aeaaff4e",
+  "name": "Place Order : Register While Checkout",
+  "historyId": "fb428f988d7b9cd001cda5812212ff5e:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n",
+    "trace": "Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n\n    at HomePage.goToCartPage (C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\pages\\homePage.ts:75:39)\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:23:27"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserType.launch",
+              "start": 1746796629934,
+              "stop": 1746796630416
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: browser",
+          "start": 1746796629927,
+          "stop": 1746796630417
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1746796630428,
+              "stop": 1746796630472
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746796630421,
+          "stop": 1746796630478
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1746796630485,
+              "stop": 1746796631245
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746796630480,
+          "stop": 1746796631246
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1746796629912,
+      "stop": 1746796631246
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796631263,
+      "name": "page.goto(https://automationexercise.com/)",
+      "stop": 1746796635023
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796635029,
+      "name": "locator.isVisible(.logo.pull-left)",
+      "stop": 1746796635291
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796635299,
+      "name": "expect.toBeTruthy",
+      "stop": 1746796635301
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796635305,
+      "name": "locator.isVisible(.nav.navbar-nav)",
+      "stop": 1746796635316
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796635320,
+      "name": "expect.toBeTruthy",
+      "stop": 1746796635321
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796635325,
+      "name": "locator.isVisible(#footer >> nth=0)",
+      "stop": 1746796635334
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796635336,
+      "name": "expect.toBeTruthy",
+      "stop": 1746796635331
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796635341,
+      "name": "page.pause",
+      "stop": 1746796639601
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796639609,
+      "name": "locator.count(.product-image-wrapper)",
+      "stop": 1746796641624
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796641628,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=0)",
+      "stop": 1746796641706
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796641710,
+      "name": "locator.textContent(.product-image-wrapper >> nth=0 >> div.productinfo p)",
+      "stop": 1746796643260
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796643264,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=1)",
+      "stop": 1746796643351
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796643355,
+      "name": "locator.textContent(.product-image-wrapper >> nth=1 >> div.productinfo p)",
+      "stop": 1746796644964
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796644967,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=2)",
+      "stop": 1746796645064
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796645066,
+      "name": "locator.textContent(.product-image-wrapper >> nth=2 >> div.productinfo p)",
+      "stop": 1746796647555
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796647559,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=3)",
+      "stop": 1746796647647
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796647650,
+      "name": "locator.textContent(.product-image-wrapper >> nth=3 >> div.productinfo p)",
+      "stop": 1746796648975
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796648979,
+      "name": "locator.click(.product-image-wrapper >> nth=3 >> text=Add to cart >> nth=0)",
+      "stop": 1746796650364
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796650373,
+      "name": "locator.click(.btn.btn-success.close-modal.btn-block)",
+      "stop": 1746796652948
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n",
+        "trace": "Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n\n    at HomePage.goToCartPage (C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\pages\\homePage.ts:75:39)\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:23:27"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746796652953,
+      "name": "locator.click(a[href=\"/view_cart\"])",
+      "stop": 1746796653179
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_error-context-0",
+          "source": "70acb91f-6e1b-42b8-80d9-0c88270ed9ae-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1746796654392,
+      "name": "_error-context-0",
+      "stop": 1746796654392
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746796653190,
+          "stop": 1746796653191
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746796653193,
+          "stop": 1746796653193
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1746796653183,
+      "stop": 1746796653552
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "4835fcb3-bc24-41b5-b74a-e01b3ab45ce9-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "registerWhileCheckout.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > registerWhileCheckout.spec.ts" },
+    { "name": "host", "value": "Confiz-6290" },
+    { "name": "thread", "value": "pid-22056-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "registerWhileCheckout.spec.ts" }
+  ],
+  "links": [],
+  "start": 1746796629923,
+  "testCaseId": "fb428f988d7b9cd001cda5812212ff5e",
+  "fullName": "registerWhileCheckout.spec.ts:7:5",
+  "stop": 1746796653029
+}

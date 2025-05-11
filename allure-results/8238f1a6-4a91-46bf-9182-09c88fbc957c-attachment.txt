@@ -1,0 +1,17 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Dianna Mueller',
+  'Sanford - Ankunding',
+  '856 Bogan Center',
+  'Apt. 756',
+  'Medford Indiana 26739',
+  'New Zealand',
+  '1-247-314-7747 x2426'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+}

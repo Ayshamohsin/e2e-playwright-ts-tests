@@ -1,0 +1,11 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Valentina Ward',
+  'Blanda - Erdman',
+  '867 Kestrel Close',
+  'Suite 263',
+  'South Jamal New Hampshire 93234-5696',
+  'New Zealand',
+  '(418) 568-9707'
+]

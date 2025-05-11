@@ -1,0 +1,11 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Adriel Olson',
+  'Herzog, Kohler and Kemmer',
+  '9558 Koch Well',
+  'Apt. 306',
+  'Reyfield Idaho 41723-4959',
+  'New Zealand',
+  '1-785-351-0425 x000'
+]

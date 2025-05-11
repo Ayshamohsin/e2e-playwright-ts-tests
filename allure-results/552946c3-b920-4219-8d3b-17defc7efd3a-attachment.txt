@@ -1,0 +1,17 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Anderson Little',
+  'Frami LLC',
+  '9577 Maverick Walk',
+  'Suite 659',
+  'New Oda Delaware 69954-5279',
+  'New Zealand',
+  '243.957.6477'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+} Rs. 1500 1 Stylish Dress

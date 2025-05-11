@@ -1,0 +1,20 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Chaya Donnelly',
+  'Stoltenberg LLC',
+  '7925 Jabari Skyway',
+  'Apt. 798',
+  'Fort Leonorfield New York 27260-0188',
+  'New Zealand',
+  '578.428.1966'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+}
+Captured Permanent Success Message: Congratulations! Your order has been confirmed!
+Captured Accout Deletion Success Message: Your account has been permanently deleted!
+ yahoo ran all

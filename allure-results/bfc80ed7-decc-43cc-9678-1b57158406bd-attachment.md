@@ -1,0 +1,242 @@
+# Test info
+
+- Name: Place Order : Register While Checkout
+- Location: C:\Users\Administrator\Desktop\AyshaMohsin_AssessmentTasks\src\tests\registerWhileCheckout.spec.ts:11:5
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "1"
+Received: 1
+    at C:\Users\Administrator\Desktop\AyshaMohsin_AssessmentTasks\src\tests\registerWhileCheckout.spec.ts:93:33
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - link "Website for automation practice":
+    - /url: /
+    - img "Website for automation practice"
+  - list:
+    - listitem:
+      - link " Home":
+        - /url: /
+    - listitem:
+      - link " Products":
+        - /url: /products
+    - listitem:
+      - link " Cart":
+        - /url: /view_cart
+    - listitem:
+      - link " Logout":
+        - /url: /logout
+    - listitem:
+      - link " Delete Account":
+        - /url: /delete_account
+    - listitem:
+      - link " Test Cases":
+        - /url: /test_cases
+    - listitem:
+      - link " API Testing":
+        - /url: /api_list
+    - listitem:
+      - link " Video Tutorials":
+        - /url: https://www.youtube.com/c/AutomationExercise
+    - listitem:
+      - link " Contact us":
+        - /url: /contact_us
+    - listitem:  Logged in as Philip Reynolds
+- list:
+  - listitem:
+    - link "Home":
+      - /url: /
+  - listitem: Checkout
+- heading "Address Details" [level=2]
+- list:
+  - listitem:
+    - heading "Your delivery address" [level=3]
+  - listitem: Mrs. Alexandre Rohan
+  - listitem: Little - Tromp
+  - listitem: 306 Mikel Dale
+  - listitem: Apt. 338
+  - listitem: Houston New Hampshire 94653-3962
+  - listitem: New Zealand
+  - listitem: 1-664-205-2920 x268
+- list:
+  - listitem:
+    - heading "Your billing address" [level=3]
+  - listitem: Mrs. Alexandre Rohan
+  - listitem: Little - Tromp
+  - listitem: 306 Mikel Dale
+  - listitem: Apt. 338
+  - listitem: Houston New Hampshire 94653-3962
+  - listitem: New Zealand
+  - listitem: 1-664-205-2920 x268
+- heading "Review Your Order" [level=2]
+- table:
+  - rowgroup:
+    - row "Item Description Price Quantity Total":
+      - cell "Item"
+      - cell "Description"
+      - cell "Price"
+      - cell "Quantity"
+      - cell "Total"
+      - cell
+  - rowgroup:
+    - row "Product Image Stylish Dress Women > Dress Rs. 1500 1 Rs. 1500":
+      - cell "Product Image":
+        - link "Product Image":
+          - /url: ""
+          - img "Product Image"
+      - cell "Stylish Dress Women > Dress":
+        - heading "Stylish Dress" [level=4]:
+          - link "Stylish Dress":
+            - /url: /product_details/4
+        - paragraph: Women > Dress
+      - cell "Rs. 1500":
+        - paragraph: Rs. 1500
+      - cell "1":
+        - button "1"
+      - cell "Rs. 1500":
+        - paragraph: Rs. 1500
+    - row "Total Amount Rs. 1500":
+      - cell
+      - cell
+      - cell "Total Amount":
+        - heading "Total Amount" [level=4]
+      - cell "Rs. 1500":
+        - paragraph: Rs. 1500
+- text: If you would like to add a comment about your order, please write it in the field below.
+- textbox
+- link "Place Order":
+  - /url: /payment
+- contentinfo:
+  - heading "Subscription" [level=2]
+  - textbox "Your email address"
+  - button ""
+  - paragraph: Get the most recent updates from our site and be updated your self...
+  - paragraph: Copyright © 2021 All rights reserved
+- link "":
+  - /url: "#top"
+- insertion:
+  - iframe
+```
+
+# Test source
+
+```ts
+   1 | import {test,expect} from '@playwright/test'
+   2 | import{HomePage} from '../pages/homePage'
+   3 | import { CartPage } from '../pages/cartPage';
+   4 | import { SignUp } from '../pages/signUP';
+   5 | import { CheckOut } from '../pages/checkOut';
+   6 |
+   7 |
+   8 |
+   9 |
+   10 |
+   11 | test('Place Order : Register While Checkout' , async ({page}) =>{
+   12 |       const homePageObject = new HomePage(page);
+   13 |       const cartPageObject = new CartPage(page);
+   14 |       const signUpPageObject = new SignUp(page);
+   15 |       const checkOutPageObject = new CheckOut(page);
+   16 |
+   17 |
+   18 |
+   19 |       await homePageObject.navigate();
+   20 |       //Assertion logo is visible
+   21 |       const isLogoVisible = await homePageObject.getLogoVisibility();
+   22 |        expect(isLogoVisible).toBeTruthy();
+   23 |        //Validating Home icon is visible
+   24 |       const navLinks = await homePageObject.getNavBarLinksNames();
+   25 |       expect (navLinks).toBeTruthy();
+   26 |      //Footer is visible
+   27 |      const footerIsVisible = await homePageObject.getFooterVisibility();
+   28 |      expect (footerIsVisible).toBeTruthy();
+   29 |
+   30 |      //Add Products
+   31 |     
+   32 |      const addedItems = await homePageObject.addProducts();
+   33 |       console.log('Added Items:', addedItems);
+   34 |      await homePageObject.goToCartPage();
+   35 |
+   36 |
+   37 |      //Cart Page Visibility 
+   38 |     // await cartPageObject.isCartPageVisible();
+   39 |      await expect (cartPageObject.cartItems).toBeVisible();
+   40 |
+   41 |      //Checkout
+   42 |      await cartPageObject.proceedToCheckout();
+   43 |
+   44 |      //Login/Register
+   45 |      await cartPageObject.clickLoginRegister();
+   46 |
+   47 |      //Signup Page
+   48 |      const day = '15';
+   49 |      const month = '8';
+   50 |      const year = '2010';
+   51 |      const country = "New Zealand"
+   52 |      const user = await signUpPageObject.registerUser(day,month,year,country);
+   53 |      const messageLocator = await signUpPageObject.verifyAccountCreated();
+   54 |      await expect(messageLocator).toHaveText('Congratulations! Your new account has been successfully created!');
+   55 |      await signUpPageObject.clickContinueButton();
+   56 |      //await page.pause();
+   57 |      await expect(signUpPageObject.page.getByText(` Logged in as ${user.name}`, { exact: false })).toBeVisible();
+   58 |     
+   59 |
+   60 |      //Go to cart page
+   61 |      await homePageObject.goToCartPage();
+   62 |      await cartPageObject.proceedToCheckout();
+   63 |
+   64 |      //Verify Delivery Address
+   65 |      function normalizeLines(lines: string[]): string[] {  //learn
+   66 |   return lines.map(line => line.replace(/\s+/g, ' ').trim());
+   67 | }
+   68 |
+   69 |
+   70 |      const expectedDeliveryAddress = normalizeLines( [
+   71 |         `Mrs. ${user.firstName} ${user.lastName}`,
+   72 |         `${user.company}`,
+   73 |         `${user.address}`,
+   74 |         `${user.addressField}`,
+   75 |         `${user.city} ${user.state}\n${user.zipCode}`,
+   76 |         `${user.country}`,
+   77 |         `${user.phone}`
+   78 |      ]);
+   79 |      const actualDeliveryAddress = normalizeLines(await checkOutPageObject.verifyDeliveryAddressDetail()); 
+   80 |        expect(actualDeliveryAddress).toEqual(expectedDeliveryAddress);
+   81 |        const actualBillingAddress = normalizeLines(await checkOutPageObject.verifyBillingAddressDetail()); 
+   82 |        expect(actualDeliveryAddress).toEqual(expectedDeliveryAddress);
+   83 |      
+   84 |      console.log(expectedDeliveryAddress)
+   85 |
+   86 |      //order review
+   87 |     const actualorder = await checkOutPageObject.reviewYourOrder();
+   88 |
+   89 |     for(const added of addedItems){
+   90 |         const match = actualorder.find(item=>item.name === added.name)
+   91 |         expect(match).toBeDefined();
+   92 |         expect(match?.price).toBe(added.price);
+>  93 |         expect(match?.quantity).toBe(added.quantity);
+      |                                 ^ Error: expect(received).toBe(expected) // Object.is equality
+   94 |         console.log("ARAN ALL")
+   95 |
+   96 |     }
+   97 |
+   98 |    
+   99 |
+  100 |
+  101 |
+  102 |
+  103 |
+  104 |  
+  105 |
+  106 |
+  107 |
+  108 |
+  109 | });
+  110 |
+```

@@ -1,0 +1,357 @@
+{
+  "uuid": "c59111e8-a1da-42f2-a6cc-926d4a709b1a",
+  "name": "Place Order : Register While Checkout",
+  "historyId": "fb428f988d7b9cd001cda5812212ff5e:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').locator('text=Add to cart') resolved to 74 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka locator('.productinfo > .btn').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka locator('.overlay-content > .btn').first()\n    3) <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(4) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    4) <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(4) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    5) <a data-product-id=\"3\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(5) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    6) <a data-product-id=\"3\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(5) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    7) <a data-product-id=\"4\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(6) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    8) <a data-product-id=\"4\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(6) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    9) <a data-product-id=\"5\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(7) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    10) <a data-product-id=\"5\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(7) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    ...\n\nCall log:\n  - waiting for locator('.product-image-wrapper').locator('text=Add to cart')\n",
+    "trace": "Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').locator('text=Add to cart') resolved to 74 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka locator('.productinfo > .btn').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka locator('.overlay-content > .btn').first()\n    3) <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(4) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    4) <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(4) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    5) <a data-product-id=\"3\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(5) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    6) <a data-product-id=\"3\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(5) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    7) <a data-product-id=\"4\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(6) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    8) <a data-product-id=\"4\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(6) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    9) <a data-product-id=\"5\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(7) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    10) <a data-product-id=\"5\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(7) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    ...\n\nCall log:\n  - waiting for locator('.product-image-wrapper').locator('text=Add to cart')\n\n    at HomePage.addProducts (C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\pages\\homePage.ts:56:64)\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:21:6"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserType.launch",
+              "start": 1746794488761,
+              "stop": 1746794489290
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: browser",
+          "start": 1746794488754,
+          "stop": 1746794489291
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1746794489301,
+              "stop": 1746794489325
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746794489294,
+          "stop": 1746794489330
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1746794489334,
+              "stop": 1746794489924
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746794489331,
+          "stop": 1746794489924
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1746794488734,
+      "stop": 1746794489924
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794489939,
+      "name": "page.goto(https://automationexercise.com/)",
+      "stop": 1746794496066
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496073,
+      "name": "locator.isVisible(.logo.pull-left)",
+      "stop": 1746794496270
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496283,
+      "name": "expect.toBeTruthy",
+      "stop": 1746794496285
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496289,
+      "name": "locator.isVisible(.nav.navbar-nav)",
+      "stop": 1746794496306
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496309,
+      "name": "expect.toBeTruthy",
+      "stop": 1746794496315
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496313,
+      "name": "locator.isVisible(#footer >> nth=0)",
+      "stop": 1746794496326
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496331,
+      "name": "expect.toBeTruthy",
+      "stop": 1746794496337
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496336,
+      "name": "locator.count(.product-image-wrapper)",
+      "stop": 1746794496344
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496350,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=0)",
+      "stop": 1746794496454
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496457,
+      "name": "locator.textContent(.product-image-wrapper >> nth=0 >> div.productinfo p)",
+      "stop": 1746794496475
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496487,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=1)",
+      "stop": 1746794496582
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496584,
+      "name": "locator.textContent(.product-image-wrapper >> nth=1 >> div.productinfo p)",
+      "stop": 1746794496591
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496597,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=2)",
+      "stop": 1746794496668
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496671,
+      "name": "locator.textContent(.product-image-wrapper >> nth=2 >> div.productinfo p)",
+      "stop": 1746794496679
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496684,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=3)",
+      "stop": 1746794496749
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496751,
+      "name": "locator.textContent(.product-image-wrapper >> nth=3 >> div.productinfo p)",
+      "stop": 1746794496759
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').locator('text=Add to cart') resolved to 74 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka locator('.productinfo > .btn').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka locator('.overlay-content > .btn').first()\n    3) <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(4) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    4) <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(4) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    5) <a data-product-id=\"3\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(5) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    6) <a data-product-id=\"3\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(5) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    7) <a data-product-id=\"4\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(6) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    8) <a data-product-id=\"4\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(6) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    9) <a data-product-id=\"5\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(7) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    10) <a data-product-id=\"5\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(7) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    ...\n\nCall log:\n  - waiting for locator('.product-image-wrapper').locator('text=Add to cart')\n",
+        "trace": "Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').locator('text=Add to cart') resolved to 74 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka locator('.productinfo > .btn').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka locator('.overlay-content > .btn').first()\n    3) <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(4) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    4) <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(4) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    5) <a data-product-id=\"3\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(5) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    6) <a data-product-id=\"3\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(5) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    7) <a data-product-id=\"4\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(6) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    8) <a data-product-id=\"4\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(6) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    9) <a data-product-id=\"5\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(7) > .product-image-wrapper > .single-products > .productinfo > .btn')\n    10) <a data-product-id=\"5\" class=\"btn btn-default add-to-cart\">…</a> aka locator('div:nth-child(7) > .product-image-wrapper > .single-products > .product-overlay > .overlay-content > .btn')\n    ...\n\nCall log:\n  - waiting for locator('.product-image-wrapper').locator('text=Add to cart')\n\n    at HomePage.addProducts (C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\pages\\homePage.ts:56:64)\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:21:6"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746794496765,
+      "name": "locator.click(.product-image-wrapper >> text=Add to cart)",
+      "stop": 1746794497658
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_error-context-0",
+          "source": "e495869d-218a-4c3d-9d84-b2dd6e8413d4-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1746794498542,
+      "name": "_error-context-0",
+      "stop": 1746794498542
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746794497669,
+          "stop": 1746794497670
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746794497672,
+          "stop": 1746794497672
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1746794497664,
+      "stop": 1746794498024
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "3ac7fff8-d9f4-4b34-8b5f-9afc07f75296-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "registerWhileCheckout.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > registerWhileCheckout.spec.ts" },
+    { "name": "host", "value": "Confiz-6290" },
+    { "name": "thread", "value": "pid-7752-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "registerWhileCheckout.spec.ts" }
+  ],
+  "links": [],
+  "start": 1746794488752,
+  "testCaseId": "fb428f988d7b9cd001cda5812212ff5e",
+  "fullName": "registerWhileCheckout.spec.ts:7:5",
+  "stop": 1746794497444
+}

@@ -1,0 +1,274 @@
+{
+  "uuid": "76d9de8d-c059-486b-b555-36e1b316e9ba",
+  "name": "Place Order : Register While Checkout",
+  "historyId": "fb428f988d7b9cd001cda5812212ff5e:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: locator.textContent: Error: strict mode violation: locator('.product-image-wrapper').first().locator('p') resolved to 2 elements:\n    1) <p>Blue Top</p> aka getByText('Blue Top').first()\n    2) <p>Blue Top</p> aka getByText('Blue Top').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('p')\n",
+    "trace": "Error: locator.textContent: Error: strict mode violation: locator('.product-image-wrapper').first().locator('p') resolved to 2 elements:\n    1) <p>Blue Top</p> aka getByText('Blue Top').first()\n    2) <p>Blue Top</p> aka getByText('Blue Top').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('p')\n\n    at HomePage.addProducts (C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\pages\\homePage.ts:49:54)\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:21:6"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserType.launch",
+              "start": 1746793565618,
+              "stop": 1746793565820
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: browser",
+          "start": 1746793565615,
+          "stop": 1746793565820
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1746793565824,
+              "stop": 1746793565841
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746793565822,
+          "stop": 1746793565843
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1746793565846,
+              "stop": 1746793565994
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746793565844,
+          "stop": 1746793565994
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1746793565608,
+      "stop": 1746793565994
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746793566002,
+      "name": "page.goto(https://automationexercise.com/)",
+      "stop": 1746793571650
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746793571654,
+      "name": "locator.isVisible(.logo.pull-left)",
+      "stop": 1746793571706
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746793571708,
+      "name": "expect.toBeTruthy",
+      "stop": 1746793571709
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746793571710,
+      "name": "locator.isVisible(.nav.navbar-nav)",
+      "stop": 1746793571713
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746793571714,
+      "name": "expect.toBeTruthy",
+      "stop": 1746793571714
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746793571715,
+      "name": "locator.isVisible(#footer >> nth=0)",
+      "stop": 1746793571720
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746793571720,
+      "name": "expect.toBeTruthy",
+      "stop": 1746793571720
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746793571721,
+      "name": "locator.count(.product-image-wrapper)",
+      "stop": 1746793571724
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746793571725,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=0)",
+      "stop": 1746793571763
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.textContent: Error: strict mode violation: locator('.product-image-wrapper').first().locator('p') resolved to 2 elements:\n    1) <p>Blue Top</p> aka getByText('Blue Top').first()\n    2) <p>Blue Top</p> aka getByText('Blue Top').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('p')\n",
+        "trace": "Error: locator.textContent: Error: strict mode violation: locator('.product-image-wrapper').first().locator('p') resolved to 2 elements:\n    1) <p>Blue Top</p> aka getByText('Blue Top').first()\n    2) <p>Blue Top</p> aka getByText('Blue Top').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('p')\n\n    at HomePage.addProducts (C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\pages\\homePage.ts:49:54)\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:21:6"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746793571766,
+      "name": "locator.textContent(.product-image-wrapper >> nth=0 >> p)",
+      "stop": 1746793571859
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_error-context-0",
+          "source": "54f232ec-f0fd-409b-bfe3-4ba068d4de8d-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1746793572141,
+      "name": "_error-context-0",
+      "stop": 1746793572141
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746793571862,
+          "stop": 1746793571862
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746793571862,
+          "stop": 1746793571862
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1746793571861,
+      "stop": 1746793571963
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "registerWhileCheckout.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > registerWhileCheckout.spec.ts" },
+    { "name": "host", "value": "Confiz-6290" },
+    { "name": "thread", "value": "pid-19616-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "registerWhileCheckout.spec.ts" }
+  ],
+  "links": [],
+  "start": 1746793565613,
+  "testCaseId": "fb428f988d7b9cd001cda5812212ff5e",
+  "fullName": "registerWhileCheckout.spec.ts:7:5",
+  "stop": 1746793571744
+}

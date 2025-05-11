@@ -1,0 +1,12 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Jacynthe Ratke',
+  'Gutkowski - Powlowski',
+  '4799 W Broadway Street',
+  'Apt. 131',
+  'VonRuedenchester West Virginia 03545',
+  'New Zealand',
+  '716.473.5910'
+]
+ARAN ALL

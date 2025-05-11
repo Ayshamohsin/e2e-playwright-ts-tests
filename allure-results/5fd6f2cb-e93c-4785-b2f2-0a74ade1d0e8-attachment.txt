@@ -1,0 +1,25 @@
+Clicked add to cart for: Stylish Dress
+Clicked add to cart for: Winter Top
+Added Items: [
+  { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 },
+  { name: 'Winter Top', price: 'Rs. 600', quantity: 1 }
+]
+Expected Delivery Address: [
+  'Mrs. Dominic Graham',
+  'Mayert, Spinka and Breitenberg',
+  '23753 Chelsea Via',
+  'Apt. 249',
+  'North Marlenbury West Virginia 79922',
+  'New Zealand',
+  '1-710-984-1625 x4047'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+}
+Matched Item: { name: 'Winter Top', price: 'Rs. 600', quantity: 1, total: 'Rs. 600' }
+Captured Permanent Success Message: Congratulations! Your order has been confirmed!
+Captured Accout Deletion Success Message: Your account has been permanently deleted!
+✅ Yahoo! Everything Working Fine, ran all

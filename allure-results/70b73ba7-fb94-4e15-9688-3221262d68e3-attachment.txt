@@ -1,0 +1,17 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Paris Pfannerstill',
+  'Conroy - Bernhard',
+  '21100 Buckingham Road',
+  'Apt. 870',
+  'North Dimitri Washington 34763',
+  'New Zealand',
+  '(474) 491-3260'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+}

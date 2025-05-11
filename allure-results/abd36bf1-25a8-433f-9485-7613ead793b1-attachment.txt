@@ -1,0 +1,11 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Britney Orn',
+  'Becker - Kuhn',
+  '8433 E South Street',
+  'Apt. 360',
+  'Samanthafort Minnesota 17854',
+  'New Zealand',
+  '(401) 516-1291 x700'
+]

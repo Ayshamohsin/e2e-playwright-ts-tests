@@ -1,0 +1,852 @@
+{
+  "uuid": "a84fd7d8-fc21-45c3-b75d-e07eca7a99cd",
+  "name": "Place Order : Register While Checkout",
+  "historyId": "fb428f988d7b9cd001cda5812212ff5e:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 2\n+ Received  + 1\n\n  Array [\n    \"Mrs. Emmett Streich\",\n    \"Windler Inc\",\n    \"551 Maggio Greens\",\n    \"Suite 245\",\n-   \"West Manuel New Hampshire\n- 18713-3362\",\n+   \"West Manuel New Hampshire 18713-3362\",\n    \"New Zealand\",\n    \"(713) 213-7294 x0206\",\n  ]",
+    "trace": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 2\n+ Received  + 1\n\n  Array [\n    \"Mrs. Emmett Streich\",\n    \"Windler Inc\",\n    \"551 Maggio Greens\",\n    \"Suite 245\",\n-   \"West Manuel New Hampshire\n- 18713-3362\",\n+   \"West Manuel New Hampshire 18713-3362\",\n    \"New Zealand\",\n    \"(713) 213-7294 x0206\",\n  ]\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:76:43"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserType.launch",
+              "start": 1746848581906,
+              "stop": 1746848582447
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: browser",
+          "start": 1746848581896,
+          "stop": 1746848582448
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1746848582458,
+              "stop": 1746848582495
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746848582451,
+          "stop": 1746848582501
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1746848582508,
+              "stop": 1746848582918
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746848582502,
+          "stop": 1746848582919
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1746848581880,
+      "stop": 1746848582919
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848582951,
+      "name": "page.goto(https://automationexercise.com/)",
+      "stop": 1746848589889
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848589899,
+      "name": "locator.isVisible(.logo.pull-left)",
+      "stop": 1746848590051
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590060,
+      "name": "expect.toBeTruthy",
+      "stop": 1746848590062
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590065,
+      "name": "locator.isVisible(.nav.navbar-nav)",
+      "stop": 1746848590078
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590081,
+      "name": "expect.toBeTruthy",
+      "stop": 1746848590084
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590084,
+      "name": "locator.isVisible(#footer >> nth=0)",
+      "stop": 1746848590093
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590095,
+      "name": "expect.toBeTruthy",
+      "stop": 1746848590098
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590097,
+      "name": "locator.count(.product-image-wrapper)",
+      "stop": 1746848590111
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590115,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=0)",
+      "stop": 1746848590192
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590196,
+      "name": "locator.textContent(.product-image-wrapper >> nth=0 >> div.productinfo p)",
+      "stop": 1746848590224
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590231,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=1)",
+      "stop": 1746848590309
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590311,
+      "name": "locator.textContent(.product-image-wrapper >> nth=1 >> div.productinfo p)",
+      "stop": 1746848590320
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590325,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=2)",
+      "stop": 1746848590393
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590396,
+      "name": "locator.textContent(.product-image-wrapper >> nth=2 >> div.productinfo p)",
+      "stop": 1746848590408
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590411,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper >> nth=3)",
+      "stop": 1746848590459
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590461,
+      "name": "locator.textContent(.product-image-wrapper >> nth=3 >> div.productinfo p)",
+      "stop": 1746848590470
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590476,
+      "name": "locator.click(.product-image-wrapper >> nth=3 >> text=Add to cart >> nth=0)",
+      "stop": 1746848590580
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848590584,
+      "name": "locator.click(.btn.btn-success.close-modal.btn-block)",
+      "stop": 1746848592145
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848592148,
+      "name": "locator.click(a[href=\"/view_cart\"] >> nth=0)",
+      "stop": 1746848592660
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848592663,
+      "name": "expect.toBeVisible",
+      "stop": 1746848592751
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848592756,
+      "name": "locator.click(.btn.btn-default.check_out)",
+      "stop": 1746848592792
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848592794,
+      "name": "locator.click(a[href=\"/login\"] >> nth=1)",
+      "stop": 1746848593180
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848593200,
+      "name": "locator.fill(John Konopelski)",
+      "stop": 1746848593340
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848593346,
+      "name": "locator.fill(Kristofer.Hammes@gmail.com)",
+      "stop": 1746848593373
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848593377,
+      "name": "locator.fill(Kristofer.Hammes@gmail.com)",
+      "stop": 1746848593401
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848593407,
+      "name": "locator.getByRole('button', { name: 'Signup' }).click",
+      "stop": 1746848593967
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848593971,
+      "name": "locator.check(//input[@id='id_gender2'])",
+      "stop": 1746848594211
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848594213,
+      "name": "locator.fill(Ja1ajl4ULZSabLR)",
+      "stop": 1746848594238
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848594242,
+      "name": "locator.selectOption(#days)",
+      "stop": 1746848594304
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848594308,
+      "name": "locator.selectOption(#months)",
+      "stop": 1746848594324
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848594327,
+      "name": "locator.selectOption(#years)",
+      "stop": 1746848594345
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848594350,
+      "name": "locator.check(#newsletter)",
+      "stop": 1746848594456
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848594460,
+      "name": "locator.check(#optin)",
+      "stop": 1746848594531
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848594533,
+      "name": "locator.fill(Emmett)",
+      "stop": 1746848594560
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848594564,
+      "name": "locator.fill(Streich)",
+      "stop": 1746848594639
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848594645,
+      "name": "locator.fill(Windler Inc)",
+      "stop": 1746848594678
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848594682,
+      "name": "locator.fill(551 Maggio Greens)",
+      "stop": 1746848594722
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848594728,
+      "name": "locator.fill(Suite 245)",
+      "stop": 1746848594772
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848594776,
+      "name": "locator.click(#country)",
+      "stop": 1746848594978
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848594982,
+      "name": "locator.selectOption(#country)",
+      "stop": 1746848595061
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848595063,
+      "name": "locator.fill(New Hampshire)",
+      "stop": 1746848595149
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848595152,
+      "name": "locator.fill(West Manuel)",
+      "stop": 1746848595189
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848595197,
+      "name": "locator.fill(18713-3362)",
+      "stop": 1746848595248
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848595252,
+      "name": "locator.fill((713) 213-7294 x0206)",
+      "stop": 1746848595298
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848595303,
+      "name": "locator.click(.btn.btn-default >> nth=0)",
+      "stop": 1746848596410
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848596419,
+      "name": "page.waitForLoadState",
+      "stop": 1746848600130
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848600133,
+      "name": "expect.toHaveText",
+      "stop": 1746848600166
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848600168,
+      "name": "locator.click(.btn.btn-primary)",
+      "stop": 1746848600786
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848600788,
+      "name": "page.waitForLoadState",
+      "stop": 1746848600839
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848600844,
+      "name": "page.pause",
+      "stop": 1746848605111
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848605119,
+      "name": "expect.toBeVisible",
+      "stop": 1746848606010
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848606012,
+      "name": "locator.click(a[href=\"/view_cart\"] >> nth=0)",
+      "stop": 1746848607288
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848607291,
+      "name": "locator.click(.btn.btn-default.check_out)",
+      "stop": 1746848608650
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848608655,
+      "name": "locator.count(#address_delivery li)",
+      "stop": 1746848610310
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848610316,
+      "name": "locator.textContent(#address_delivery li >> nth=1)",
+      "stop": 1746848610755
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848610761,
+      "name": "locator.textContent(#address_delivery li >> nth=2)",
+      "stop": 1746848610935
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848610941,
+      "name": "locator.textContent(#address_delivery li >> nth=3)",
+      "stop": 1746848611075
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848611078,
+      "name": "locator.textContent(#address_delivery li >> nth=4)",
+      "stop": 1746848611229
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848611235,
+      "name": "locator.textContent(#address_delivery li >> nth=5)",
+      "stop": 1746848611440
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848611443,
+      "name": "locator.textContent(#address_delivery li >> nth=6)",
+      "stop": 1746848611709
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848611711,
+      "name": "locator.textContent(#address_delivery li >> nth=7)",
+      "stop": 1746848611937
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 2\n+ Received  + 1\n\n  Array [\n    \"Mrs. Emmett Streich\",\n    \"Windler Inc\",\n    \"551 Maggio Greens\",\n    \"Suite 245\",\n-   \"West Manuel New Hampshire\n- 18713-3362\",\n+   \"West Manuel New Hampshire 18713-3362\",\n    \"New Zealand\",\n    \"(713) 213-7294 x0206\",\n  ]",
+        "trace": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 2\n+ Received  + 1\n\n  Array [\n    \"Mrs. Emmett Streich\",\n    \"Windler Inc\",\n    \"551 Maggio Greens\",\n    \"Suite 245\",\n-   \"West Manuel New Hampshire\n- 18713-3362\",\n+   \"West Manuel New Hampshire 18713-3362\",\n    \"New Zealand\",\n    \"(713) 213-7294 x0206\",\n  ]\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:76:43"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746848611941,
+      "name": "expect.toEqual",
+      "stop": 1746848611954
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_error-context-0",
+          "source": "f55d7795-0dd3-42fb-a650-2c65a93761d4-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1746848613480,
+      "name": "_error-context-0",
+      "stop": 1746848613480
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746848611959,
+          "stop": 1746848611959
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746848611960,
+          "stop": 1746848611960
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1746848611957,
+      "stop": 1746848612229
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "e119207a-2841-413c-9b1c-960cf4676782-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "registerWhileCheckout.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > registerWhileCheckout.spec.ts" },
+    { "name": "host", "value": "Confiz-6290" },
+    { "name": "thread", "value": "pid-11868-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "registerWhileCheckout.spec.ts" }
+  ],
+  "links": [],
+  "start": 1746848581891,
+  "testCaseId": "fb428f988d7b9cd001cda5812212ff5e",
+  "fullName": "registerWhileCheckout.spec.ts:11:5",
+  "stop": 1746848611618
+}

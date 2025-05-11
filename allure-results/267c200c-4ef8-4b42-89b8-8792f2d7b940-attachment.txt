@@ -1,0 +1,11 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Deborah Wolff',
+  'Morar, Towne and Conn',
+  '84756 Waterloo Road',
+  'Apt. 714',
+  'New Agustin South Carolina 07804',
+  'New Zealand',
+  '(738) 537-4578'
+]

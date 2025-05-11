@@ -1,0 +1,11 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Elmo Sporer',
+  'Gerhold and Sons',
+  '603 Kathleen Turnpike',
+  'Apt. 208',
+  'Valentinehaven New Mexico 24599',
+  'New Zealand',
+  '954.454.7933 x03694'
+]

@@ -1,0 +1,11 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Gayle Murazik',
+  'Carroll Group',
+  '733 W Washington Avenue',
+  'Apt. 657',
+  'West Brian New Hampshire 55425-3266',
+  'New Zealand',
+  '(952) 608-5237'
+]

@@ -1,0 +1,17 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Verda Roberts',
+  'Murazik Group',
+  '9590 Stanton Divide',
+  'Apt. 381',
+  'South Hayliecester Nevada 55914',
+  'New Zealand',
+  '327-990-9069'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+} Rs. 1500 1 Stylish Dress

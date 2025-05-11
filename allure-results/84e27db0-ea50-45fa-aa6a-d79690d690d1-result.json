@@ -1,0 +1,670 @@
+{
+  "uuid": "84e27db0-ea50-45fa-aa6a-d79690d690d1",
+  "name": "Place Order : Register While Checkout",
+  "historyId": "fb428f988d7b9cd001cda5812212ff5e:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserType.launch",
+              "start": 1746791348826,
+              "stop": 1746791349313
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: browser",
+          "start": 1746791348820,
+          "stop": 1746791349314
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1746791349325,
+              "stop": 1746791349364
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746791349318,
+          "stop": 1746791349371
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1746791349378,
+              "stop": 1746791349856
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746791349373,
+          "stop": 1746791349857
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1746791348804,
+      "stop": 1746791349859
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791349880,
+      "name": "page.goto(https://automationexercise.com/)",
+      "stop": 1746791355797
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791355804,
+      "name": "locator.isVisible(.logo.pull-left)",
+      "stop": 1746791355949
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791355955,
+      "name": "expect.toBeTruthy",
+      "stop": 1746791355957
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791355962,
+      "name": "locator.isVisible(.nav.navbar-nav)",
+      "stop": 1746791355971
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791355973,
+      "name": "expect.toBeTruthy",
+      "stop": 1746791355967
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791355976,
+      "name": "locator.isVisible(#footer >> nth=0)",
+      "stop": 1746791355987
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791355989,
+      "name": "expect.toBeTruthy",
+      "stop": 1746791355982
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791355992,
+      "name": "locator.count(.product-image-wrapper)",
+      "stop": 1746791355999
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356002,
+      "name": "locator.textContent(.product-image-wrapper >> nth=0)",
+      "stop": 1746791356012
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356016,
+      "name": "locator.textContent(.product-image-wrapper >> nth=1)",
+      "stop": 1746791356023
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356029,
+      "name": "locator.textContent(.product-image-wrapper >> nth=2)",
+      "stop": 1746791356037
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356038,
+      "name": "locator.textContent(.product-image-wrapper >> nth=3)",
+      "stop": 1746791356046
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356048,
+      "name": "locator.textContent(.product-image-wrapper >> nth=4)",
+      "stop": 1746791356054
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356055,
+      "name": "locator.textContent(.product-image-wrapper >> nth=5)",
+      "stop": 1746791356063
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356067,
+      "name": "locator.textContent(.product-image-wrapper >> nth=6)",
+      "stop": 1746791356074
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356076,
+      "name": "locator.textContent(.product-image-wrapper >> nth=7)",
+      "stop": 1746791356081
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356084,
+      "name": "locator.textContent(.product-image-wrapper >> nth=8)",
+      "stop": 1746791356090
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356093,
+      "name": "locator.textContent(.product-image-wrapper >> nth=9)",
+      "stop": 1746791356100
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356102,
+      "name": "locator.textContent(.product-image-wrapper >> nth=10)",
+      "stop": 1746791356107
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356109,
+      "name": "locator.textContent(.product-image-wrapper >> nth=11)",
+      "stop": 1746791356114
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356116,
+      "name": "locator.textContent(.product-image-wrapper >> nth=12)",
+      "stop": 1746791356122
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356124,
+      "name": "locator.textContent(.product-image-wrapper >> nth=13)",
+      "stop": 1746791356129
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356132,
+      "name": "locator.textContent(.product-image-wrapper >> nth=14)",
+      "stop": 1746791356143
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356145,
+      "name": "locator.textContent(.product-image-wrapper >> nth=15)",
+      "stop": 1746791356149
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356151,
+      "name": "locator.textContent(.product-image-wrapper >> nth=16)",
+      "stop": 1746791356155
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356157,
+      "name": "locator.textContent(.product-image-wrapper >> nth=17)",
+      "stop": 1746791356162
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356163,
+      "name": "locator.textContent(.product-image-wrapper >> nth=18)",
+      "stop": 1746791356168
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356170,
+      "name": "locator.textContent(.product-image-wrapper >> nth=19)",
+      "stop": 1746791356176
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356178,
+      "name": "locator.textContent(.product-image-wrapper >> nth=20)",
+      "stop": 1746791356182
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356185,
+      "name": "locator.textContent(.product-image-wrapper >> nth=21)",
+      "stop": 1746791356190
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356192,
+      "name": "locator.textContent(.product-image-wrapper >> nth=22)",
+      "stop": 1746791356197
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356199,
+      "name": "locator.textContent(.product-image-wrapper >> nth=23)",
+      "stop": 1746791356204
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356206,
+      "name": "locator.textContent(.product-image-wrapper >> nth=24)",
+      "stop": 1746791356211
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356215,
+      "name": "locator.textContent(.product-image-wrapper >> nth=25)",
+      "stop": 1746791356222
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356224,
+      "name": "locator.textContent(.product-image-wrapper >> nth=26)",
+      "stop": 1746791356229
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356231,
+      "name": "locator.textContent(.product-image-wrapper >> nth=27)",
+      "stop": 1746791356237
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356240,
+      "name": "locator.textContent(.product-image-wrapper >> nth=28)",
+      "stop": 1746791356252
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356254,
+      "name": "locator.textContent(.product-image-wrapper >> nth=29)",
+      "stop": 1746791356259
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356261,
+      "name": "locator.textContent(.product-image-wrapper >> nth=30)",
+      "stop": 1746791356265
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356267,
+      "name": "locator.textContent(.product-image-wrapper >> nth=31)",
+      "stop": 1746791356273
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356276,
+      "name": "locator.textContent(.product-image-wrapper >> nth=32)",
+      "stop": 1746791356281
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356283,
+      "name": "locator.textContent(.product-image-wrapper >> nth=33)",
+      "stop": 1746791356288
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356291,
+      "name": "locator.textContent(.product-image-wrapper >> nth=34)",
+      "stop": 1746791356296
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356298,
+      "name": "locator.textContent(.product-image-wrapper >> nth=35)",
+      "stop": 1746791356302
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356304,
+      "name": "locator.textContent(.product-image-wrapper >> nth=36)",
+      "stop": 1746791356311
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356314,
+      "name": "locator.textContent(.product-image-wrapper >> nth=37)",
+      "stop": 1746791356320
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356322,
+      "name": "locator.textContent(.product-image-wrapper >> nth=38)",
+      "stop": 1746791356328
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746791356330,
+      "name": "locator.textContent(.product-image-wrapper >> nth=39)",
+      "stop": 1746791356335
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746791356338,
+          "stop": 1746791356338
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746791356339,
+          "stop": 1746791356339
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1746791356336,
+      "stop": 1746791356487
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "registerWhileCheckout.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > registerWhileCheckout.spec.ts" },
+    { "name": "host", "value": "Confiz-6290" },
+    { "name": "thread", "value": "pid-15488-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "registerWhileCheckout.spec.ts" }
+  ],
+  "links": [],
+  "start": 1746791348814,
+  "testCaseId": "fb428f988d7b9cd001cda5812212ff5e",
+  "fullName": "registerWhileCheckout.spec.ts:7:5",
+  "stop": 1746791355985
+}

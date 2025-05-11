@@ -1,0 +1,18 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Jayson Keeling',
+  'Reynolds LLC',
+  '513 State Street',
+  'Suite 538',
+  'Wilsonberg Texas 56291',
+  'New Zealand',
+  '(209) 332-2152 x174'
+]
+ aysha's work {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+} Rs. 1500 1 Stylish Dress
+WHAT IS paymentData: undefined

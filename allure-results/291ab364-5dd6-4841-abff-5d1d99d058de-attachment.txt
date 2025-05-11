@@ -1,0 +1,19 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Vivienne Schuppe',
+  'Raynor, Wolf and Langosh',
+  '98328 The Drive',
+  'Suite 916',
+  'Schaeferville Alabama 74477',
+  'New Zealand',
+  '1-835-221-9015 x36876'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+}
+Captured Permanent Success Message: Congratulations! Your order has been confirmed!
+ yahoo ran all

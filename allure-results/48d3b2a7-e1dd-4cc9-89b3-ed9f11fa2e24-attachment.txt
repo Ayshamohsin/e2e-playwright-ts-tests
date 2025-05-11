@@ -1,0 +1,11 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Elizabeth Windler',
+  'Jast, Koss and Rowe',
+  '86303 Sienna Trail',
+  'Suite 908',
+  'Brianneberg South Dakota 54154',
+  'New Zealand',
+  '(331) 855-0780 x5205'
+]

@@ -1,0 +1,11 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Kira Beatty',
+  'Raynor - Witting',
+  '238 The Ridgeway',
+  'Suite 543',
+  'Lauderhill Iowa 97682',
+  'New Zealand',
+  '(913) 993-9436'
+]

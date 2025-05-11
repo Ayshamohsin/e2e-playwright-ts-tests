@@ -1,0 +1,11 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Buddy Kertzmann',
+  'Bruen - Hyatt',
+  '11183 Ash Street',
+  'Suite 479',
+  'West Darianville Oklahoma 05278',
+  'New Zealand',
+  '349.903.3918 x17010'
+]

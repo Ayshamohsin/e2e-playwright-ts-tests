@@ -1,0 +1,14 @@
+Product name is Blue Top
+Product name is Men Tshirt
+Product name is Sleeveless Dress
+Product name is Stylish Dress
+Click add to cart for: Stylish Dress
+[
+  'Mrs. Leone Torp',
+  'Bogisich, Stokes and Walsh',
+  '2146 Vivianne Glens',
+  'Apt. 632',
+  'Parisianstead Nevada 21632',
+  'New Zealand',
+  '997.671.2389'
+]

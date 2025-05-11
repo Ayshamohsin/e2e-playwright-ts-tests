@@ -1,0 +1,17 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Ryann Kuphal',
+  'Weissnat Inc',
+  '478 Bartoletti Trace',
+  'Apt. 131',
+  'South Montanastad Virginia 24097',
+  'New Zealand',
+  '667-284-5607 x16533'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+} Rs. 1500 1 Stylish Dress

@@ -1,0 +1,20 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Cierra Nicolas',
+  'Hermann Inc',
+  '4322 Littel Circles',
+  'Suite 581',
+  'Kesslertown New York 08604',
+  'New Zealand',
+  '685.737.7497'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+}
+Captured Permanent Success Message: Congratulations! Your order has been confirmed!
+Captured Accout Deletion Success Message: Your account has been permanently deleted!
+ yahoo ran all

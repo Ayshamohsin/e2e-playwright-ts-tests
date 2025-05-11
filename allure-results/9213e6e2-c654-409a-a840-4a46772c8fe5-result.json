@@ -1,0 +1,263 @@
+{
+  "uuid": "9213e6e2-c654-409a-a840-4a46772c8fe5",
+  "name": "Place Order : Register While Checkout",
+  "historyId": "fb428f988d7b9cd001cda5812212ff5e:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: locator.scrollIntoViewIfNeeded: Error: strict mode violation: locator('.product-image-wrapper') resolved to 40 elements:\n    1) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 500 Blue Top Add to cart Rs. 500 Blue Top Add to cart View Product')\n    2) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 400 Men Tshirt Add to cart Rs. 400 Men Tshirt Add to cart View Product')\n    3) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(5) > .product-image-wrapper')\n    4) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 1500 Stylish Dress Add to cart Rs. 1500 Stylish Dress Add to cart View')\n    5) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 600 Winter Top Add to cart Rs. 600 Winter Top Add to cart View Product')\n    6) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 400 Summer White Top Add to cart Rs. 400 Summer White Top Add to cart View')\n    7) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(9) > .product-image-wrapper')\n    8) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 700 Fancy Green Top Add to cart Rs. 700 Fancy Green Top Add to cart View')\n    9) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(11) > .product-image-wrapper')\n    10) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(12) > .product-image-wrapper')\n    ...\n\nCall log:\n  - waiting for locator('.product-image-wrapper')\n",
+    "trace": "Error: locator.scrollIntoViewIfNeeded: Error: strict mode violation: locator('.product-image-wrapper') resolved to 40 elements:\n    1) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 500 Blue Top Add to cart Rs. 500 Blue Top Add to cart View Product')\n    2) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 400 Men Tshirt Add to cart Rs. 400 Men Tshirt Add to cart View Product')\n    3) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(5) > .product-image-wrapper')\n    4) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 1500 Stylish Dress Add to cart Rs. 1500 Stylish Dress Add to cart View')\n    5) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 600 Winter Top Add to cart Rs. 600 Winter Top Add to cart View Product')\n    6) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 400 Summer White Top Add to cart Rs. 400 Summer White Top Add to cart View')\n    7) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(9) > .product-image-wrapper')\n    8) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 700 Fancy Green Top Add to cart Rs. 700 Fancy Green Top Add to cart View')\n    9) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(11) > .product-image-wrapper')\n    10) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(12) > .product-image-wrapper')\n    ...\n\nCall log:\n  - waiting for locator('.product-image-wrapper')\n\n    at HomePage.addProducts (C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\pages\\homePage.ts:46:20)\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:21:6"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserType.launch",
+              "start": 1746792519597,
+              "stop": 1746792520041
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: browser",
+          "start": 1746792519592,
+          "stop": 1746792520042
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1746792520054,
+              "stop": 1746792520087
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746792520047,
+          "stop": 1746792520094
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1746792520103,
+              "stop": 1746792520702
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746792520097,
+          "stop": 1746792520703
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1746792519573,
+      "stop": 1746792520703
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746792520760,
+      "name": "page.goto(https://automationexercise.com/)",
+      "stop": 1746792524528
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746792524534,
+      "name": "locator.isVisible(.logo.pull-left)",
+      "stop": 1746792524808
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746792524815,
+      "name": "expect.toBeTruthy",
+      "stop": 1746792524816
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746792524819,
+      "name": "locator.isVisible(.nav.navbar-nav)",
+      "stop": 1746792524826
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746792524830,
+      "name": "expect.toBeTruthy",
+      "stop": 1746792524826
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746792524833,
+      "name": "locator.isVisible(#footer >> nth=0)",
+      "stop": 1746792524840
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746792524843,
+      "name": "expect.toBeTruthy",
+      "stop": 1746792524839
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746792524845,
+      "name": "locator.count(.product-image-wrapper)",
+      "stop": 1746792524852
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.scrollIntoViewIfNeeded: Error: strict mode violation: locator('.product-image-wrapper') resolved to 40 elements:\n    1) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 500 Blue Top Add to cart Rs. 500 Blue Top Add to cart View Product')\n    2) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 400 Men Tshirt Add to cart Rs. 400 Men Tshirt Add to cart View Product')\n    3) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(5) > .product-image-wrapper')\n    4) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 1500 Stylish Dress Add to cart Rs. 1500 Stylish Dress Add to cart View')\n    5) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 600 Winter Top Add to cart Rs. 600 Winter Top Add to cart View Product')\n    6) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 400 Summer White Top Add to cart Rs. 400 Summer White Top Add to cart View')\n    7) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(9) > .product-image-wrapper')\n    8) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 700 Fancy Green Top Add to cart Rs. 700 Fancy Green Top Add to cart View')\n    9) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(11) > .product-image-wrapper')\n    10) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(12) > .product-image-wrapper')\n    ...\n\nCall log:\n  - waiting for locator('.product-image-wrapper')\n",
+        "trace": "Error: locator.scrollIntoViewIfNeeded: Error: strict mode violation: locator('.product-image-wrapper') resolved to 40 elements:\n    1) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 500 Blue Top Add to cart Rs. 500 Blue Top Add to cart View Product')\n    2) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 400 Men Tshirt Add to cart Rs. 400 Men Tshirt Add to cart View Product')\n    3) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(5) > .product-image-wrapper')\n    4) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 1500 Stylish Dress Add to cart Rs. 1500 Stylish Dress Add to cart View')\n    5) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 600 Winter Top Add to cart Rs. 600 Winter Top Add to cart View Product')\n    6) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 400 Summer White Top Add to cart Rs. 400 Summer White Top Add to cart View')\n    7) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(9) > .product-image-wrapper')\n    8) <div class=\"product-image-wrapper\">…</div> aka getByText('Rs. 700 Fancy Green Top Add to cart Rs. 700 Fancy Green Top Add to cart View')\n    9) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(11) > .product-image-wrapper')\n    10) <div class=\"product-image-wrapper\">…</div> aka locator('div:nth-child(12) > .product-image-wrapper')\n    ...\n\nCall log:\n  - waiting for locator('.product-image-wrapper')\n\n    at HomePage.addProducts (C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\pages\\homePage.ts:46:20)\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerWhileCheckout.spec.ts:21:6"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746792524854,
+      "name": "locator.scrollIntoViewIfNeeded(.product-image-wrapper)",
+      "stop": 1746792525177
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_error-context-0",
+          "source": "3ccb0b93-34e4-4a79-914a-bc0aa72d1702-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1746792526049,
+      "name": "_error-context-0",
+      "stop": 1746792526049
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746792525186,
+          "stop": 1746792525186
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746792525187,
+          "stop": 1746792525187
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1746792525182,
+      "stop": 1746792525629
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "registerWhileCheckout.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > registerWhileCheckout.spec.ts" },
+    { "name": "host", "value": "Confiz-6290" },
+    { "name": "thread", "value": "pid-16312-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "registerWhileCheckout.spec.ts" }
+  ],
+  "links": [],
+  "start": 1746792519584,
+  "testCaseId": "fb428f988d7b9cd001cda5812212ff5e",
+  "fullName": "registerWhileCheckout.spec.ts:7:5",
+  "stop": 1746792525117
+}

@@ -1,0 +1,20 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Jonas Torp',
+  'Sporer, Pfannerstill and Kris',
+  '626 Wood Lane',
+  'Suite 923',
+  'Rethabury Michigan 16578-9428',
+  'New Zealand',
+  '1-454-488-7709 x4086'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+}
+Captured Permanent Success Message: Congratulations! Your order has been confirmed!
+Captured Permanent Success Message: Your account has been permanently deleted!
+ yahoo ran all

@@ -1,0 +1,12 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Marley Kozey',
+  'Predovic, Luettgen and Schulist',
+  '912 Rocky Haven',
+  'Suite 952',
+  'Chapel Hill Michigan 38189-2324',
+  'New Zealand',
+  '1-806-680-3513 x853'
+]
+ARAN ALL

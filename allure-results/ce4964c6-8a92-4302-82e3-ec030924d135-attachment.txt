@@ -1,0 +1,17 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+Expected Delivery Address: [
+  'Mrs. Luis Nikolaus',
+  'Bode, Goodwin and Grimes',
+  '57021 N Harrison Street',
+  'Apt. 573',
+  'New Lutherton Alabama 42773-9792',
+  'New Zealand',
+  '1-851-586-2275'
+]
+Matched Item: {
+  name: 'Stylish Dress',
+  price: 'Rs. 1500',
+  quantity: 1,
+  total: 'Rs. 1500'
+} Rs. 1500 1 Stylish Dress

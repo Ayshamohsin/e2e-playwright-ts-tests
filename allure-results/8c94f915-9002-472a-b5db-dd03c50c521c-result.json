@@ -1,0 +1,274 @@
+{
+  "uuid": "8c94f915-9002-472a-b5db-dd03c50c521c",
+  "name": "Place Order: Register before Checkout",
+  "historyId": "04cb693e291e01d280b90e2c0e4cc997:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "broken",
+  "statusDetails": {
+    "message": "Test timeout of 30000ms exceeded.",
+    "trace": "Test timeout of 30000ms exceeded."
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserType.launch",
+              "start": 1746927508528,
+              "stop": 1746927508995
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: browser",
+          "start": 1746927508523,
+          "stop": 1746927508996
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1746927509007,
+              "stop": 1746927509049
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746927509000,
+          "stop": 1746927509055
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1746927509062,
+              "stop": 1746927509614
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746927509056,
+          "stop": 1746927509614
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1746927508506,
+      "stop": 1746927509614
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746927509667,
+      "name": "page.goto(https://automationexercise.com/)",
+      "stop": 1746927514882
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746927514890,
+      "name": "locator.isVisible(.logo.pull-left)",
+      "stop": 1746927515190
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746927515195,
+      "name": "expect.toBeTruthy",
+      "stop": 1746927515197
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746927515200,
+      "name": "locator.isVisible(.nav.navbar-nav)",
+      "stop": 1746927515211
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746927515215,
+      "name": "expect.toBeTruthy",
+      "stop": 1746927515222
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746927515219,
+      "name": "locator.isVisible(#footer >> nth=0)",
+      "stop": 1746927515228
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746927515232,
+      "name": "expect.toBeTruthy",
+      "stop": 1746927515239
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746927515237,
+      "name": "locator.waitFor(.fa.fa-lock)",
+      "stop": 1746927515254
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746927515257,
+      "name": "locator.click(.fa.fa-lock)",
+      "stop": 1746927515930
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for locator('a[href=\"/login\"]').nth(1)\n",
+        "trace": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for locator('a[href=\"/login\"]').nth(1)\n\n    at CartPage.clickLoginRegister (C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\pages\\cartPage.ts:25:40)\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\registerBeforeCheckout.spec.ts:34:24"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746927515935,
+      "name": "locator.click(a[href=\"/login\"] >> nth=1)",
+      "stop": 1746927539073
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_error-context-1",
+          "source": "0766ad7c-a097-4f1c-9b3e-6f106bc8acdd-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1746927539531,
+      "name": "_error-context-1",
+      "stop": 1746927539531
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1746927538994,
+          "stop": 1746927538994
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1746927538995,
+          "stop": 1746927538995
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1746927538992,
+      "stop": 1746927539134
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "registerBeforeCheckout.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > registerBeforeCheckout.spec.ts" },
+    { "name": "host", "value": "Confiz-6290" },
+    { "name": "thread", "value": "pid-684-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "registerBeforeCheckout.spec.ts" }
+  ],
+  "links": [],
+  "start": 1746927508522,
+  "testCaseId": "04cb693e291e01d280b90e2c0e4cc997",
+  "fullName": "registerBeforeCheckout.spec.ts:14:7",
+  "stop": 1746927538643
+}

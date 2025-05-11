@@ -1,0 +1,1 @@
+Skipping row 2 because product name is missing.

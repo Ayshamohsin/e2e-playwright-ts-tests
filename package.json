@@ -1,0 +1,28 @@
+{
+  "name": "ayshamohsin_assessmenttasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "prepare": "husky install",
+    "lint": "biome check .",
+    "format": "biome format .",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@faker-js/faker": "^9.7.0",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.17",
+    "allure-playwright": "^3.2.1",
+    "biome": "^0.2.2",
+    "faker": "^5.5.3",
+    "husky": "^9.1.7",
+    "playwright": "^1.52.0",
+    "typescript": "^5.8.3"
+  }
+}

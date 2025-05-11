@@ -1,0 +1,11 @@
+Click add to cart for: Stylish Dress
+Added Items: [ { name: 'Stylish Dress', price: 'Rs. 1500', quantity: 1 } ]
+[
+  'Mrs. Alphonso Purdy',
+  'Rath - Simonis',
+  '16507 Rico Ports',
+  'Apt. 252',
+  'Jenkinsmouth North Carolina 14616-9791',
+  'New Zealand',
+  '914-297-9014 x540'
+]
