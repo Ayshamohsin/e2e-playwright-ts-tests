@@ -1,7 +1,6 @@
 import type { Locator, Page } from "@playwright/test";
-import { getEnv, isEnvironmentReachable } from "../utils/environments";
-
-// Added import to get environment settings
+import { getEnv } from "../utils/environments";
+import { safeClick, waitForVisible, scrollAndClick } from "../utils/actions"; 
 
 export class HomePage {
   page: Page;
@@ -24,66 +23,61 @@ export class HomePage {
     this.cartButton = this.page.locator('a[href="/view_cart"]').first();
   }
 
+  // Navigates to the home page based on the selected environment
   async navigate() {
-    const env = getEnv(); // default 'dev' unless specified otherwise
+    const env = getEnv();
     await this.page.goto(env.baseUrl);
-    // Why: Fetches correct URL based on selected environment (dev/test). Avoids hardcoding, satisfies exercise constraint of dynamic environments.
   }
 
+  // Verifies that the home page is visible by checking key elements
   async isHomePageVisible() {
     const logoVisible = await this.logo.isVisible();
     const navBarVisible = await this.navBar.isVisible();
     const footerVisible = await this.footer.isVisible();
-
     return logoVisible && navBarVisible && footerVisible;
   }
 
-  // go to login page
+  // Navigates to the login page
   async navigateToLoginPage() {
-    await this.loginButton.waitFor({ state: "visible", timeout: 5000 });
-    await this.loginButton.click();
+    await waitForVisible(this.loginButton, 5000);
+    await safeClick(this.loginButton);
   }
 
-  // Add multiple products to the cart dynamically (Simple and Clean Version with Comments)
+  // Adds multiple products to the cart by product names
   async addProductsToCart(productNames: string[]) {
-    const addedItems: { name: string; price: string; quantity: number }[] = []; // Store added product details for later verification
-    const productCount = await this.product.count(); // Get total number of products displayed on the page
+    const addedItems: { name: string; price: string; quantity: number }[] = [];
+    const productCount = await this.product.count();
 
-    // Loop through each product name you want to add
     for (const targetProductName of productNames) {
-      // Search all displayed products for the matching name
       for (let i = 0; i < productCount; i++) {
         const productItem = this.product.nth(i);
-        await productItem.scrollIntoViewIfNeeded(); // Scroll to product if not in view
+        await productItem.scrollIntoViewIfNeeded();
 
-        const itemName = await productItem.locator("div.productinfo p").textContent(); // Get product name
-        const itemPrice = await productItem.locator("div.productinfo h2").textContent(); // Get product price
-        const quantity = 1; // Default quantity is 1 for now
+        const itemName = await productItem.locator("div.productinfo p").textContent();
+        const itemPrice = await productItem.locator("div.productinfo h2").textContent();
+        const quantity = 1;
 
-        // If the product name matches, add to cart
         if (itemName?.trim() === targetProductName) {
-          await productItem.locator("text=Add to cart").first().click(); // Click Add to Cart button
-          console.log(`Clicked add to cart for: ${targetProductName}`);
-          await this.continueShopping.click(); // After adding, click Continue Shopping
+          await scrollAndClick(productItem.locator("text=Add to cart").first());
+          console.log(`Added to cart: ${targetProductName}`);
+          await safeClick(this.continueShopping);
 
-          // Save product info for later order verification
           addedItems.push({
             name: itemName.trim() || "",
             price: itemPrice?.trim() || "",
             quantity,
           });
 
-          break; // Exit inner loop once the product is added
+          break;
         }
       }
     }
 
-    return addedItems; // Return all added products information
+    return addedItems;
   }
 
-  //Go to cart page
-
+  // Navigates to the cart page
   async goToCartPage() {
-    await this.cartButton.click();
+    await safeClick(this.cartButton);
   }
 }

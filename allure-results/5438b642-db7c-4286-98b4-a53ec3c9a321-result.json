@@ -1,1 +1,121 @@
-{"uuid":"5438b642-db7c-4286-98b4-a53ec3c9a321","name":"API 8: Verify Login without email parameter","historyId":"c374c2f11113c4c6179985dcd5bb825f:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"failed","statusDetails":{"message":"Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200","trace":"Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\api-tests\\verifyLogInApis.spec.ts:39:31"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"apiRequest.newContext","start":1746937600390,"stop":1746937600399}],"attachments":[],"parameters":[],"name":"beforeAll hook","start":1746937600371,"stop":1746937600402}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1746937600369,"stop":1746937600404},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1746937600407,"name":"apiRequestContext.post(verifyLogin)","stop":1746937601677},{"status":"failed","statusDetails":{"message":"Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200","trace":"Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\api-tests\\verifyLogInApis.spec.ts:39:31"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1746937601683,"name":"expect.toBe","stop":1746937601686},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"_error-context-0","source":"c6419294-de05-4946-994c-d38572eb1ae5-attachment.md","type":"text/markdown"}],"parameters":[],"start":1746937601713,"name":"_error-context-0","stop":1746937601713},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"After Hooks","start":1746937601687,"stop":1746937601694}],"attachments":[],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"api-tests.verifyLogInApis.spec.ts"},{"name":"titlePath","value":" > chromium > api-tests\\verifyLogInApis.spec.ts > Verify Login API Tests"},{"name":"host","value":"Confiz-6290"},{"name":"thread","value":"pid-14256-worker-1"},{"name":"parentSuite","value":"chromium"},{"name":"suite","value":"api-tests\\verifyLogInApis.spec.ts"},{"name":"subSuite","value":"Verify Login API Tests"}],"links":[],"start":1746937600367,"testCaseId":"c374c2f11113c4c6179985dcd5bb825f","fullName":"api-tests/verifyLogInApis.spec.ts:32:7","stop":1746937601652}
+{
+  "uuid": "5438b642-db7c-4286-98b4-a53ec3c9a321",
+  "name": "API 8: Verify Login without email parameter",
+  "historyId": "c374c2f11113c4c6179985dcd5bb825f:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200",
+    "trace": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\api-tests\\verifyLogInApis.spec.ts:39:31"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "apiRequest.newContext",
+              "start": 1746937600390,
+              "stop": 1746937600399
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeAll hook",
+          "start": 1746937600371,
+          "stop": 1746937600402
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1746937600369,
+      "stop": 1746937600404
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746937600407,
+      "name": "apiRequestContext.post(verifyLogin)",
+      "stop": 1746937601677
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200",
+        "trace": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\api-tests\\verifyLogInApis.spec.ts:39:31"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746937601683,
+      "name": "expect.toBe",
+      "stop": 1746937601686
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_error-context-0",
+          "source": "c6419294-de05-4946-994c-d38572eb1ae5-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1746937601713,
+      "name": "_error-context-0",
+      "stop": 1746937601713
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1746937601687,
+      "stop": 1746937601694
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "api-tests.verifyLogInApis.spec.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chromium > api-tests\\verifyLogInApis.spec.ts > Verify Login API Tests"
+    },
+    { "name": "host", "value": "Confiz-6290" },
+    { "name": "thread", "value": "pid-14256-worker-1" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "api-tests\\verifyLogInApis.spec.ts" },
+    { "name": "subSuite", "value": "Verify Login API Tests" }
+  ],
+  "links": [],
+  "start": 1746937600367,
+  "testCaseId": "c374c2f11113c4c6179985dcd5bb825f",
+  "fullName": "api-tests/verifyLogInApis.spec.ts:32:7",
+  "stop": 1746937601652
+}

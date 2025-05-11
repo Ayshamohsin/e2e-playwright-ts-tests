@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "prepare": "husky install",
+    "prepare": "husky install",
     "lint": "biome check .",
     "format": "biome format .",
     "build": "tsc"

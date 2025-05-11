@@ -1,4 +1,7 @@
 import { defineConfig, devices } from "@playwright/test";
+import { getEnv } from "./src/utils/environments";
+const currentEnv = (process.env.ENV as "dev" | "test") || "dev";
+const envSettings = getEnv(currentEnv);
 
 /**
  * Read environment variables from file.
@@ -28,7 +31,8 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
 
-    baseURL: process.env.BASE_URL || "https://automationexercise.com/",
+    //baseURL: process.env.BASE_URL || "https://automationexercise.com/",
+    baseURL: envSettings.baseUrl,
     headless: false,
     actionTimeout: 20000,
     navigationTimeout: 50000,

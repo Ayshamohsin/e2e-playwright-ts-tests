@@ -2,6 +2,7 @@
 
 import type { Locator, Page } from "@playwright/test";
 import type { PaymentData } from "../utils/testData";
+import { safeFill, safeClick, waitForVisible, scrollAndClick } from "../utils/actions"; 
 
 export class Payment {
   Page: Page;
@@ -24,33 +25,25 @@ export class Payment {
     this.successMessage = this.Page.locator("div.col-sm-9.col-sm-offset-1 p");
   }
 
+  // Fills out payment details during checkout
   async enterPaymentDetail(paymentData: PaymentData) {
     await this.Page.waitForLoadState("domcontentloaded");
 
-    await this.nameOnCard.waitFor({ state: "visible" });
-    await this.nameOnCard.fill(paymentData.cardHolderName);
-
-    await this.cardNumber.waitFor({ state: "visible" });
-    await this.cardNumber.fill(paymentData.cardNumber);
-
-    await this.cvc.waitFor({ state: "visible" });
-    await this.cvc.fill(paymentData.cvc);
-
-    await this.expirationMonth.waitFor({ state: "visible" });
-    await this.expirationMonth.fill(paymentData.expiryMonth);
-
-    await this.expirationYear.waitFor({ state: "visible" });
-    await this.expirationYear.fill(paymentData.expiryYear);
+    await safeFill(this.nameOnCard, paymentData.cardHolderName);
+    await safeFill(this.cardNumber, paymentData.cardNumber);
+    await safeFill(this.cvc, paymentData.cvc);
+    await safeFill(this.expirationMonth, paymentData.expiryMonth);
+    await safeFill(this.expirationYear, paymentData.expiryYear);
   }
 
+  // Clicks the 'Pay and Confirm Order' button
   async clickPayAndConfirm() {
-    await this.payAndConfirmOrderButton.scrollIntoViewIfNeeded();
-    await this.payAndConfirmOrderButton.waitFor({ state: "visible", timeout: 5000 });
-    await this.payAndConfirmOrderButton.click();
+    await scrollAndClick(this.payAndConfirmOrderButton);
   }
 
+  // Captures and returns the success message after placing the order
   async capturePermanentSuccessMessage() {
-    await this.successMessage.waitFor({ state: "visible", timeout: 5000 });
+    await waitForVisible(this.successMessage, 5000);
     const message = await this.successMessage.textContent();
     return message?.trim() || "";
   }

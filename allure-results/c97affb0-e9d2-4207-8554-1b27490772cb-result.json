@@ -1,1 +1,116 @@
-{"uuid":"c97affb0-e9d2-4207-8554-1b27490772cb","name":"API 10: Verify Login with invalid details","historyId":"01382e727083f74a2738d612d3b94507:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"apiRequest.newContext","start":1746938490876,"stop":1746938490901}],"attachments":[],"parameters":[],"name":"beforeAll hook","start":1746938490829,"stop":1746938490911}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1746938490826,"stop":1746938490926},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1746938490931,"name":"apiRequestContext.post(verifyLogin)","stop":1746938492952},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1746938492967,"name":"expect.toBe","stop":1746938492969},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1746938492975,"name":"expect.toContain","stop":1746938492976},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"After Hooks","start":1746938492978,"stop":1746938492987}],"attachments":[{"name":"stdout","source":"446d677a-319c-4239-b7e3-b27bc8383861-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"api-tests.verifyLogInApis.spec.ts"},{"name":"titlePath","value":" > chromium > api-tests\\verifyLogInApis.spec.ts > Verify Login API Tests"},{"name":"host","value":"Confiz-6290"},{"name":"thread","value":"pid-9652-worker-3"},{"name":"parentSuite","value":"chromium"},{"name":"suite","value":"api-tests\\verifyLogInApis.spec.ts"},{"name":"subSuite","value":"Verify Login API Tests"}],"links":[],"start":1746938490830,"testCaseId":"01382e727083f74a2738d612d3b94507","fullName":"api-tests/verifyLogInApis.spec.ts:55:7","stop":1746938492899}
+{
+  "uuid": "c97affb0-e9d2-4207-8554-1b27490772cb",
+  "name": "API 10: Verify Login with invalid details",
+  "historyId": "01382e727083f74a2738d612d3b94507:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "apiRequest.newContext",
+              "start": 1746938490876,
+              "stop": 1746938490901
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeAll hook",
+          "start": 1746938490829,
+          "stop": 1746938490911
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1746938490826,
+      "stop": 1746938490926
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746938490931,
+      "name": "apiRequestContext.post(verifyLogin)",
+      "stop": 1746938492952
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746938492967,
+      "name": "expect.toBe",
+      "stop": 1746938492969
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746938492975,
+      "name": "expect.toContain",
+      "stop": 1746938492976
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1746938492978,
+      "stop": 1746938492987
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "446d677a-319c-4239-b7e3-b27bc8383861-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "api-tests.verifyLogInApis.spec.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chromium > api-tests\\verifyLogInApis.spec.ts > Verify Login API Tests"
+    },
+    { "name": "host", "value": "Confiz-6290" },
+    { "name": "thread", "value": "pid-9652-worker-3" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "api-tests\\verifyLogInApis.spec.ts" },
+    { "name": "subSuite", "value": "Verify Login API Tests" }
+  ],
+  "links": [],
+  "start": 1746938490830,
+  "testCaseId": "01382e727083f74a2738d612d3b94507",
+  "fullName": "api-tests/verifyLogInApis.spec.ts:55:7",
+  "stop": 1746938492899
+}

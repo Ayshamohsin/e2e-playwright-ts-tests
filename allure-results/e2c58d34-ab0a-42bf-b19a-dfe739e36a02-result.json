@@ -1,1 +1,121 @@
-{"uuid":"e2c58d34-ab0a-42bf-b19a-dfe739e36a02","name":"API 9: Verify Login using DELETE method","historyId":"0d5e02aecb923709c00ada2c9646fdd3:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"failed","statusDetails":{"message":"Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 405\nReceived: 200","trace":"Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 405\nReceived: 200\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\api-tests\\verifyLogInApis.spec.ts:48:31"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"apiRequest.newContext","start":1746938240947,"stop":1746938240982}],"attachments":[],"parameters":[],"name":"beforeAll hook","start":1746938240904,"stop":1746938240990}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1746938240901,"stop":1746938240996},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1746938241002,"name":"apiRequestContext.delete(verifyLogin)","stop":1746938242225},{"status":"failed","statusDetails":{"message":"Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 405\nReceived: 200","trace":"Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 405\nReceived: 200\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\api-tests\\verifyLogInApis.spec.ts:48:31"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1746938242243,"name":"expect.toBe","stop":1746938242256},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"_error-context-0","source":"2f55dfb8-e68f-4dbe-9a67-09a51dadfb4a-attachment.md","type":"text/markdown"}],"parameters":[],"start":1746938242307,"name":"_error-context-0","stop":1746938242307},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"After Hooks","start":1746938242259,"stop":1746938242290}],"attachments":[],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"api-tests.verifyLogInApis.spec.ts"},{"name":"titlePath","value":" > chromium > api-tests\\verifyLogInApis.spec.ts > Verify Login API Tests"},{"name":"host","value":"Confiz-6290"},{"name":"thread","value":"pid-11612-worker-2"},{"name":"parentSuite","value":"chromium"},{"name":"suite","value":"api-tests\\verifyLogInApis.spec.ts"},{"name":"subSuite","value":"Verify Login API Tests"}],"links":[],"start":1746938240885,"testCaseId":"0d5e02aecb923709c00ada2c9646fdd3","fullName":"api-tests/verifyLogInApis.spec.ts:45:7","stop":1746938242157}
+{
+  "uuid": "e2c58d34-ab0a-42bf-b19a-dfe739e36a02",
+  "name": "API 9: Verify Login using DELETE method",
+  "historyId": "0d5e02aecb923709c00ada2c9646fdd3:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 405\nReceived: 200",
+    "trace": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 405\nReceived: 200\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\api-tests\\verifyLogInApis.spec.ts:48:31"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "apiRequest.newContext",
+              "start": 1746938240947,
+              "stop": 1746938240982
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeAll hook",
+          "start": 1746938240904,
+          "stop": 1746938240990
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1746938240901,
+      "stop": 1746938240996
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746938241002,
+      "name": "apiRequestContext.delete(verifyLogin)",
+      "stop": 1746938242225
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 405\nReceived: 200",
+        "trace": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 405\nReceived: 200\n    at C:\\Users\\Administrator\\Desktop\\AyshaMohsin_AssessmentTasks\\src\\tests\\api-tests\\verifyLogInApis.spec.ts:48:31"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746938242243,
+      "name": "expect.toBe",
+      "stop": 1746938242256
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_error-context-0",
+          "source": "2f55dfb8-e68f-4dbe-9a67-09a51dadfb4a-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1746938242307,
+      "name": "_error-context-0",
+      "stop": 1746938242307
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1746938242259,
+      "stop": 1746938242290
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "api-tests.verifyLogInApis.spec.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chromium > api-tests\\verifyLogInApis.spec.ts > Verify Login API Tests"
+    },
+    { "name": "host", "value": "Confiz-6290" },
+    { "name": "thread", "value": "pid-11612-worker-2" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "api-tests\\verifyLogInApis.spec.ts" },
+    { "name": "subSuite", "value": "Verify Login API Tests" }
+  ],
+  "links": [],
+  "start": 1746938240885,
+  "testCaseId": "0d5e02aecb923709c00ada2c9646fdd3",
+  "fullName": "api-tests/verifyLogInApis.spec.ts:45:7",
+  "stop": 1746938242157
+}

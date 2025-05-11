@@ -1,8 +1,8 @@
-//
 // src/pages/SignUp.ts
 
 import type { Locator, Page } from "@playwright/test";
-import type { UserData } from "../utils/testData"; //  import correct type
+import type { UserData } from "../utils/testData";
+import { safeFill, safeClick, waitForVisible } from "../utils/actions"; 
 
 export class SignUp {
   page: Page;
@@ -54,57 +54,66 @@ export class SignUp {
     this.mobileNumber = page.locator("#mobile_number");
     this.createAccountButton = page.locator(".btn.btn-default").first();
     this.successMessage = page.getByText(
-      "Congratulations! Your new account has been successfully created!",
+      "Congratulations! Your new account has been successfully created!"
     );
     this.continueButton = page.locator(".btn.btn-primary");
   }
 
-  async registerUser(
-    userData: UserData,
-    day: string,
-    month: string,
-    year: string,
-    country: string,
-  ) {
-    await this.name.fill(userData.name);
-    await this.emailAddress.fill(userData.email);
-    await this.signUpButton.click();
+  // Fills the signup form and creates a new user account
+  async registerUser(userData: UserData, day: string, month: string, year: string, country: string) {
+    await safeFill(this.name, userData.name);
+    await safeFill(this.emailAddress, userData.email);
+    await safeClick(this.signUpButton);
+
+    await waitForVisible(this.title);
     await this.title.check();
-    await this.password.fill(userData.password);
+
+    await safeFill(this.password, userData.password);
     await this.selectDateOfBirth(day, month, year);
+
+    await waitForVisible(this.signUpForNewsletter);
     await this.signUpForNewsletter.check();
+    await waitForVisible(this.receiveSpecialOffer);
     await this.receiveSpecialOffer.check();
-    await this.firstName.fill(userData.firstName);
-    await this.lastName.fill(userData.lastName);
-    await this.company.fill(userData.company);
-    await this.address.fill(userData.address);
-    await this.addressField.fill(userData.addressField || "");
-    await this.countryDropDown.click();
+
+    await safeFill(this.firstName, userData.firstName);
+    await safeFill(this.lastName, userData.lastName);
+    await safeFill(this.company, userData.company);
+    await safeFill(this.address, userData.address);
+    await safeFill(this.addressField, userData.addressField || "");
+
+    await safeClick(this.countryDropDown);
     await this.selectCountry(country);
-    await this.state.fill(userData.state);
-    await this.city.fill(userData.city);
-    await this.zipCode.fill(userData.zipCode);
-    await this.mobileNumber.fill(userData.phone);
-    await this.createAccountButton.click();
+
+    await safeFill(this.state, userData.state);
+    await safeFill(this.city, userData.city);
+    await safeFill(this.zipCode, userData.zipCode);
+    await safeFill(this.mobileNumber, userData.phone);
+
+    await safeClick(this.createAccountButton);
   }
 
+  // Selects the date of birth
   async selectDateOfBirth(day: string, month: string, year: string) {
     await this.dayDropdown.selectOption(day);
     await this.monthDropdown.selectOption(month);
     await this.yearDropdown.selectOption(year);
   }
 
+  // Selects the country from dropdown
   async selectCountry(country: string) {
     await this.countryDropDown.selectOption({ value: country });
   }
 
+  // Verifies that account creation success message is visible
   async verifyAccountCreated() {
     await this.page.waitForLoadState("networkidle");
     return this.successMessage;
   }
 
+  // Clicks the continue button after account creation
   async clickContinueButton() {
-    await this.continueButton.click();
+    await safeClick(this.continueButton);
     await this.page.waitForLoadState("domcontentloaded");
   }
 }

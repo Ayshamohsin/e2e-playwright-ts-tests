@@ -1,8 +1,8 @@
-// // src/utils/testData.ts
+// src/utils/testData.ts
 
 import { faker } from "@faker-js/faker";
 
-// Define TypeScript interfaces (models) for user and payment data
+// User data model
 export interface UserData {
   name: string;
   firstName: string;
@@ -18,6 +18,7 @@ export interface UserData {
   phone: string;
 }
 
+// Payment data model
 export interface PaymentData {
   cardHolderName: string;
   cardNumber: string;
@@ -26,14 +27,16 @@ export interface PaymentData {
   expiryYear: string;
 }
 
+// Profile model combining user and payment information
 export interface ProfileData {
   user: UserData;
   payment: PaymentData;
 }
 
-// Generate a complete profile including user and payment information
+// Generate random test profile with user and payment details
 export function generateTestProfile(): ProfileData {
   const futureDate = faker.date.future();
+
   return {
     user: {
       name: faker.person.fullName(),

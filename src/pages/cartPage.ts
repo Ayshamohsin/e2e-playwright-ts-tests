@@ -1,4 +1,6 @@
 import type { Locator, Page } from "playwright";
+import { safeClick } from "../utils/actions"; 
+
 export class CartPage {
   page: Page;
   cartItems: Locator;
@@ -12,11 +14,13 @@ export class CartPage {
     this.loginRegisterButton = this.page.locator('a[href="/login"]').nth(1);
   }
 
+  // Clicks the checkout button to proceed to checkout
   async proceedToCheckout() {
-    await this.checkOutButton.click();
+    await safeClick(this.checkOutButton);
   }
 
+  // Clicks the login/register link from the cart page
   async clickLoginRegister() {
-    await this.loginRegisterButton.click();
+    await safeClick(this.loginRegisterButton);
   }
 }

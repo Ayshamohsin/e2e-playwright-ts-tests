@@ -1,5 +1,8 @@
+// src/utils/environments.ts
+
 import { request } from "@playwright/test";
 
+// Define environment configurations
 export const environments = {
   dev: {
     baseUrl: "https://automationexercise.com/",
@@ -11,22 +14,24 @@ export const environments = {
   },
 };
 
-export function getEnv() {
-  const env = (process.env.TEST_ENV as "dev" | "test") || "dev";
+// Get environment configuration based on environment name or system variable
+export function getEnv(envName?: "dev" | "test") {
+  const env = envName || (process.env.ENV as "dev" | "test") || "dev";
   return environments[env];
 }
 
-export async function isEnvironmentReachable() {
-  const env = getEnv();
+// Check if a given environment base URL is reachable
+export async function isEnvironmentReachable(baseUrl?: string) {
+  const url = baseUrl || getEnv().baseUrl;
   const context = await request.newContext();
 
   try {
-    const response = await context.get(env.baseUrl);
+    const response = await context.get(url);
     await context.dispose();
-    return response.ok(); // true if server responded with 200-299
+    return response.ok(); // Returns true if server responds with 2xx status
   } catch (error) {
     console.error(`Environment is unreachable: ${(error as Error).message}`);
     await context.dispose();
-    return false; // If request fails (site down), return false
+    return false;
   }
 }

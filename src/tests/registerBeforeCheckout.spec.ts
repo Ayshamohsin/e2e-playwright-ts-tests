@@ -1,5 +1,3 @@
-// src/tests/registerBeforeCheckout.spec.ts
-
 import { expect, test } from "@playwright/test";
 import { CartPage } from "../pages/cartPage.ts";
 import { CheckOut } from "../pages/checkOut.ts";
@@ -10,7 +8,7 @@ import { SignUp } from "../pages/signUP.ts";
 import { getEnv, isEnvironmentReachable } from "../utils/environments";
 import { type ProfileData, generateTestProfile } from "../utils/testData.ts";
 
-// ✅ Before starting any test, check if environment is reachable
+// Before running tests, verify that the environment is reachable
 test.beforeAll(async () => {
   const reachable = await isEnvironmentReachable();
   if (!reachable) {
@@ -19,61 +17,61 @@ test.beforeAll(async () => {
 });
 
 test("Place Order: Register before Checkout", async ({ page }) => {
+  // Initialize page objects
   const homePageObject = new HomePage(page);
   const cartPageObject = new CartPage(page);
   const signUpPageObject = new SignUp(page);
   const checkOutPageObject = new CheckOut(page);
   const paymentPageObject = new Payment(page);
-  const deleteAccoutPageObject = new DeleteAccount(page);
+  const deleteAccountPageObject = new DeleteAccount(page); // Corrected spelling here
 
+  // Generate a test user profile
   const profile: ProfileData = generateTestProfile();
 
+  // Step 1-3: Launch browser and verify home page
   await homePageObject.navigate();
- 
-  //expect(await homePageObject.isHomePageVisible()).toBeTruthy(); // ✅ Verify page loaded
- expect(false).toBeTruthy(); // <- this will 100% fail instantly
+  expect(await homePageObject.isHomePageVisible()).toBeTruthy();
 
-
-
-  // ✅ Navigate to login page
+  // Step 4: Click on 'Signup / Login' button
   await homePageObject.navigateToLoginPage();
 
-  // ✅ Fill signup form
-  const day = "15";
-  const month = "8";
-  const year = "2010";
+  // Step 5: Fill signup form and create a new account
+  const day = "5";
+  const month = "6";
+  const year = "1992";
   const country = "New Zealand";
 
   await signUpPageObject.registerUser(profile.user, day, month, year, country);
+
+  // Step 6: Verify 'ACCOUNT CREATED!' message and continue
   await expect(await signUpPageObject.verifyAccountCreated()).toHaveText(
-    "Congratulations! Your new account has been successfully created!",
+    "Congratulations! Your new account has been successfully created!"
   );
   await signUpPageObject.clickContinueButton();
 
-  // ✅ Verify username shown
+  // Step 7: Verify 'Logged in as username' is visible
   await expect(
-    signUpPageObject.page.getByText(` Logged in as ${profile.user.name}`, { exact: false }),
+    signUpPageObject.page.getByText(` Logged in as ${profile.user.name}`, { exact: false })
   ).toBeVisible();
 
-  // ✅ Add product to cart (dynamic)
-
-  const productNames = ["Stylish Dress", "Winter Top"]; // ✅ Now it's an array of two products
-  const addedItems = await homePageObject.addProductsToCart(productNames); // ✅ Now correct
-
+  // Step 8: Add products to the cart
+  const productNames = ["Stylish Dress", "Winter Top"];
+  const addedItems = await homePageObject.addProductsToCart(productNames);
   console.log("Added Items:", addedItems);
 
-  // ✅ Cart page
+  // Step 9-10: Go to cart page and verify items are visible
   await homePageObject.goToCartPage();
   await expect(cartPageObject.cartItems).toBeVisible();
 
-  // ✅ Proceed to checkout
+  // Step 11: Proceed to checkout
   await cartPageObject.proceedToCheckout();
 
+  // Utility function to clean up text formatting
   function normalizeLines(lines: string[]): string[] {
     return lines.map((line) => line.replace(/\s+/g, " ").trim());
   }
 
-  // ✅ Verify address details
+  // Step 12: Verify address details for delivery and billing
   const expectedDeliveryAddress = normalizeLines([
     `Mrs. ${profile.user.firstName} ${profile.user.lastName}`,
     `${profile.user.company}`,
@@ -85,15 +83,15 @@ test("Place Order: Register before Checkout", async ({ page }) => {
   ]);
 
   expect(normalizeLines(await checkOutPageObject.verifyDeliveryAddressDetail())).toEqual(
-    expectedDeliveryAddress,
+    expectedDeliveryAddress
   );
   expect(normalizeLines(await checkOutPageObject.verifyBillingAddressDetail())).toEqual(
-    expectedDeliveryAddress,
+    expectedDeliveryAddress
   );
 
   console.log("Expected Delivery Address:", expectedDeliveryAddress);
 
-  // ✅ Review your order
+  // Verify that the items in the order match the ones added to the cart
   const actualOrder = await checkOutPageObject.reviewYourOrder();
   for (const added of addedItems) {
     const match = actualOrder.find((item) => item.name === added.name);
@@ -103,29 +101,27 @@ test("Place Order: Register before Checkout", async ({ page }) => {
     console.log("Matched Item:", match);
   }
 
-  // ✅ Add description and place order
+  // Step 13: Enter comment and place order
   await checkOutPageObject.addDescriptionAndPlaceOrder();
 
-  // ✅ Enter payment details
+  // Step 14: Enter payment details
   await paymentPageObject.enterPaymentDetail(profile.payment);
 
-  // ✅ Click Pay button
+  // Step 15: Click 'Pay and Confirm Order' button
   await paymentPageObject.clickPayAndConfirm();
 
-  // ✅ Capture permanent success message
+  // Step 16: Capture and verify success message after order placement
   const successMessage = await paymentPageObject.capturePermanentSuccessMessage();
   console.log("Captured Permanent Success Message:", successMessage);
-
-  // ✅ Final assertion
   expect(successMessage).toContain("Congratulations! Your order has been confirmed!");
 
-  // ✅ Delete account
-  const deleteMessage = await deleteAccoutPageObject.DeleteAccountandVerifymessage();
-  console.log("Captured Accout Deletion Success Message:", deleteMessage);
+  // Step 17: Delete account after order
+  const deleteMessage = await deleteAccountPageObject.deleteAccountAndVerifyMessage();
+  console.log("Captured Account Deletion Success Message:", deleteMessage);
   expect(deleteMessage).toContain("Your account has been permanently deleted!");
 
-  // ✅ Continue
-  await deleteAccoutPageObject.clickContinueButton();
+  // Step 18: Click continue button after account deletion
+  await deleteAccountPageObject.clickContinueButton();
 
-  console.log("✅ Yahoo! Everything Working Fine, ran all");
+  console.log("Test completed successfully");
 });
