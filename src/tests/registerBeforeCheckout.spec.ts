@@ -30,7 +30,7 @@ test("Place Order: Register before Checkout", async ({ page }) => {
 
   await homePageObject.navigate();
  
- // expect(await homePageObject.isHomePageVisible()).toBeTruthy(); // ✅ Verify page loaded
+  expect(await homePageObject.isHomePageVisible()).toBeTruthy(); // ✅ Verify page loaded
   expect(await homePageObject.isHomePageVisible()).toBeFalsy();
 
 
@@ -45,7 +45,7 @@ test("Place Order: Register before Checkout", async ({ page }) => {
 
   await signUpPageObject.registerUser(profile.user, day, month, year, country);
   await expect(await signUpPageObject.verifyAccountCreated()).toHaveText(
-    "Congratulations! Your new account has been successfully created!",
+    "Congratulations! Your new account has been successfully created! hhhhh",
   );
   await signUpPageObject.clickContinueButton();
 
