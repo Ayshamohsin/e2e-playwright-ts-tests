@@ -1,10 +1,21 @@
 # 
 #!/bin/sh
+#!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-set -e  # <-- ADD THIS LINE ✅
+set -e
 
 npm run lint
 npm run build
+
+# 🛑 NEW: Run Playwright test and capture exit code
 npx playwright test src/tests/registerBeforeCheckout.spec.ts --bail
+status=$?
+
+if [ $status -ne 0 ]; then
+  echo "❌ Playwright tests failed. Aborting commit."
+  exit 1
+fi
+
+
 
