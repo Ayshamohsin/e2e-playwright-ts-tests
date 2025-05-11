@@ -3,4 +3,4 @@
 
 npm run lint
 npm run build
-npx playwright test
+npx playwright test --bail
