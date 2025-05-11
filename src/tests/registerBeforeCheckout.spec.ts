@@ -31,7 +31,8 @@ test("Place Order: Register before Checkout", async ({ page }) => {
   await homePageObject.navigate();
  
   //expect(await homePageObject.isHomePageVisible()).toBeTruthy(); // ✅ Verify page loaded
-  expect(await homePageObject.isHomePageVisible()).toBeFalsy();
+ expect(false).toBeTruthy(); // <- this will 100% fail instantly
+
 
 
   // ✅ Navigate to login page
