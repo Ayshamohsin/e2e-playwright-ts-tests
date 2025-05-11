@@ -29,6 +29,11 @@ test("Place Order: Register before Checkout", async ({ page }) => {
   const profile: ProfileData = generateTestProfile();
 
   await homePageObject.navigate();
+  //////
+  if (!(await homePageObject.isHomePageVisible())) {
+  throw new Error("❌ Home Page is not visible! Test stopped.");
+}
+///////
   expect(await homePageObject.isHomePageVisible()).toBeTruthy(); // ✅ Verify page loaded
 
   // ✅ Navigate to login page
