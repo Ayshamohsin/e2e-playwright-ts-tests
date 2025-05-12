@@ -7,7 +7,12 @@
     "prepare": "husky install",
     "lint": "biome check .",
     "format": "biome format .",
-    "build": "tsc"
+    "build": "tsc",
+    "clean:allure": "rimraf allure-results allure-report",
+    "test:dev:with:allure": "npm run clean:allure && cross-env TEST_ENV=dev npx playwright test --project=chromium && npm run allure:generate && npm run allure:open",
+    "test:test:with:allure": "npm run clean:allure && cross-env TEST_ENV=test npx playwright test --project=chromium && npm run allure:generate && npm run allure:open",
+    "allure:generate": "npx allure generate ./allure-results --clean",
+    "allure:open": "npx allure open ./allure-report"
   },
   "keywords": [],
   "author": "",
@@ -20,9 +25,11 @@
     "@types/node": "^22.15.17",
     "allure-playwright": "^3.2.1",
     "biome": "^0.2.2",
+    "cross-env": "^7.0.3",
     "faker": "^5.5.3",
     "husky": "^9.1.7",
     "playwright": "^1.52.0",
+    "rimraf": "^6.0.1",
     "typescript": "^5.8.3"
   }
 }

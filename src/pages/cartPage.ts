@@ -1,5 +1,5 @@
 import type { Locator, Page } from "playwright";
-import { safeClick } from "../utils/actions"; 
+import { safeClick } from "../utils/actions";
 
 export class CartPage {
   page: Page;

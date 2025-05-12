@@ -1,5 +1,5 @@
 import type { Locator, Page } from "@playwright/test";
-import { safeFill, safeClick, waitForVisible } from "../utils/actions"; 
+import { safeClick, safeFill, waitForVisible } from "../utils/actions";
 
 type OrderItem = {
   name: string;
@@ -93,7 +93,11 @@ export class CheckOut {
   // Adds description in the comment box and places the order
   async addDescriptionAndPlaceOrder() {
     await waitForVisible(this.commentTextArea, 10000);
-    await safeFill(this.commentTextArea, "I have reviewed my delivery address and order details.", 10000);
+    await safeFill(
+      this.commentTextArea,
+      "I have reviewed my delivery address and order details.",
+      10000,
+    );
     await safeClick(this.placeOrderButton);
   }
 }

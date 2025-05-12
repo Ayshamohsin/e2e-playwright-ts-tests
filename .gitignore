@@ -1,17 +1,19 @@
-
-# Playwright
-node_modules/
+# Playwright outputs
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 
-
-# Ignore test result files
+# Allure (Generated test reports)
 allure-results/
+allure-report/
+allure-report-*/
 
-# Node.js default ignores
+# Node.js
 node_modules/
 dist/
 .env
 
+# System files
+.DS_Store
+Thumbs.db

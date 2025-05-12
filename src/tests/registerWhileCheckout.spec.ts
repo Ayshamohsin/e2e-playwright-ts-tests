@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { allure } from "allure-playwright";
 import { CartPage } from "../pages/cartPage.ts";
 import { CheckOut } from "../pages/checkOut.ts";
 import { DeleteAccount } from "../pages/deleteAccount.ts";
@@ -28,6 +29,11 @@ test("Place Order: Register while Checkout", async ({ page }) => {
   // Generate a test user profile
   const profile: ProfileData = generateTestProfile();
 
+  allure.feature("Place Order");
+  allure.severity("critical");
+  allure.owner("Ayesha Mohsin");
+  allure.story("User registration at checkout");
+
   // Step 1-3: Navigate to homepage and verify it is visible
   await homePageObject.navigate();
   expect(await homePageObject.isHomePageVisible()).toBeTruthy();
@@ -54,13 +60,13 @@ test("Place Order: Register while Checkout", async ({ page }) => {
 
   // Step 10: Verify 'ACCOUNT CREATED!' message and continue
   await expect(await signUpPageObject.verifyAccountCreated()).toHaveText(
-    "Congratulations! Your new account has been successfully created!"
+    "Congratulations! Your new account has been successfully created!",
   );
   await signUpPageObject.clickContinueButton();
 
   // Step 11: Verify 'Logged in as username' is displayed
   await expect(
-    signUpPageObject.page.getByText(` Logged in as ${profile.user.name}`, { exact: false })
+    signUpPageObject.page.getByText(` Logged in as ${profile.user.name}`, { exact: false }),
   ).toBeVisible();
 
   // Step 12-13: Go back to cart page and proceed to checkout again
@@ -84,10 +90,10 @@ test("Place Order: Register while Checkout", async ({ page }) => {
   ]);
 
   expect(normalizeLines(await checkOutPageObject.verifyDeliveryAddressDetail())).toEqual(
-    expectedDeliveryAddress
+    expectedDeliveryAddress,
   );
   expect(normalizeLines(await checkOutPageObject.verifyBillingAddressDetail())).toEqual(
-    expectedDeliveryAddress
+    expectedDeliveryAddress,
   );
 
   console.log("Expected Delivery Address:", expectedDeliveryAddress);

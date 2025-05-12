@@ -1,4 +1,5 @@
 import { type APIRequestContext, expect, test } from "@playwright/test";
+import { allure } from "allure-playwright";
 
 // Base URL for API tests
 const baseUrl = "https://automationexercise.com/api/";
@@ -22,10 +23,14 @@ test.describe("Verify Login API Tests", () => {
 
   // API 7: Verify login with valid email and password
   test("API 7: Verify Login with valid details", async () => {
+    allure.feature("Login Api");
+    allure.severity("critical");
+    allure.owner("Ayesha Mohsin");
+    allure.story("Login with valid detailst");
     const response = await apiContext.post("verifyLogin", {
       form: {
-        email: 'ayzalnoman@gmail.com',
-        password: 'Saadnoman@123',
+        email: "ayzalnoman@gmail.com",
+        password: "Saadnoman@123",
       },
     });
     const body = await response.json();
@@ -37,6 +42,10 @@ test.describe("Verify Login API Tests", () => {
 
   // API 8: Verify login without providing email
   test("API 8: Verify Login without email parameter", async () => {
+    allure.feature("Login Api");
+    allure.severity("critical");
+    allure.owner("Ayesha Mohsin");
+    allure.story("Login with invalid email");
     const response = await apiContext.post("verifyLogin", {
       form: {
         password: validPassword,
@@ -47,12 +56,16 @@ test.describe("Verify Login API Tests", () => {
 
     expect(body.responseCode).toBe(400);
     expect(body.message).toContain(
-      "Bad request, email or password parameter is missing in POST request."
+      "Bad request, email or password parameter is missing in POST request.",
     );
   });
 
   // API 9: Verify login using DELETE method instead of POST
   test("API 9: Verify Login using DELETE method", async () => {
+    allure.feature("Login Api");
+    allure.severity("critical");
+    allure.owner("Ayesha Mohsin");
+    allure.story("Login using DELETE method ");
     const response = await apiContext.delete("verifyLogin");
     const body = await response.json();
     console.log("API 9 Response:", body);
@@ -63,6 +76,10 @@ test.describe("Verify Login API Tests", () => {
 
   // API 10: Verify login with invalid email and password
   test("API 10: Verify Login with invalid details", async () => {
+    allure.feature("Login Api");
+    allure.severity("critical");
+    allure.owner("Ayesha Mohsin");
+    allure.story("Login with invalid email and password");
     const response = await apiContext.post("verifyLogin", {
       form: {
         email: "invalidemail@example.com",

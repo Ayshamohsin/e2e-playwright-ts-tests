@@ -1,6 +1,6 @@
 import type { Locator, Page } from "@playwright/test";
+import { safeClick, scrollAndClick, waitForVisible } from "../utils/actions";
 import { getEnv } from "../utils/environments";
-import { safeClick, waitForVisible, scrollAndClick } from "../utils/actions"; 
 
 export class HomePage {
   page: Page;

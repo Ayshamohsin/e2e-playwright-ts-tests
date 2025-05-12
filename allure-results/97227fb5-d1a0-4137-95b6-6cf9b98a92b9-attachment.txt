@@ -1,7 +1,0 @@
-Product name is Blue Top
-Product name is Men Tshirt
-Product name is Sleeveless Dress
-Product name is Stylish Dress
-Click add to cart for: Stylish Dress
-Aysha you are amazing locator('p:has-text("Congratulations! Your new account has been successfully created!")')
-Aysha you are amazing

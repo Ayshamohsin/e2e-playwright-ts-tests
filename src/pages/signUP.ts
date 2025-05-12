@@ -1,8 +1,8 @@
 // src/pages/SignUp.ts
 
 import type { Locator, Page } from "@playwright/test";
+import { safeClick, safeFill, waitForVisible } from "../utils/actions";
 import type { UserData } from "../utils/testData";
-import { safeFill, safeClick, waitForVisible } from "../utils/actions"; 
 
 export class SignUp {
   page: Page;
@@ -54,13 +54,19 @@ export class SignUp {
     this.mobileNumber = page.locator("#mobile_number");
     this.createAccountButton = page.locator(".btn.btn-default").first();
     this.successMessage = page.getByText(
-      "Congratulations! Your new account has been successfully created!"
+      "Congratulations! Your new account has been successfully created!",
     );
     this.continueButton = page.locator(".btn.btn-primary");
   }
 
   // Fills the signup form and creates a new user account
-  async registerUser(userData: UserData, day: string, month: string, year: string, country: string) {
+  async registerUser(
+    userData: UserData,
+    day: string,
+    month: string,
+    year: string,
+    country: string,
+  ) {
     await safeFill(this.name, userData.name);
     await safeFill(this.emailAddress, userData.email);
     await safeClick(this.signUpButton);
@@ -106,8 +112,9 @@ export class SignUp {
   }
 
   // Verifies that account creation success message is visible
+
   async verifyAccountCreated() {
-    await this.page.waitForLoadState("networkidle");
+    await this.page.waitForLoadState("load"); // or optionally remove if already enough wait
     return this.successMessage;
   }
 

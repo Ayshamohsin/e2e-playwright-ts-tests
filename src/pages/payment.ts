@@ -1,8 +1,8 @@
 // src/pages/Payment.ts
 
 import type { Locator, Page } from "@playwright/test";
+import { safeClick, safeFill, scrollAndClick, waitForVisible } from "../utils/actions";
 import type { PaymentData } from "../utils/testData";
-import { safeFill, safeClick, waitForVisible, scrollAndClick } from "../utils/actions"; 
 
 export class Payment {
   Page: Page;
